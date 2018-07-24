@@ -1,10 +1,10 @@
-/* exported checkGuessAnswers */
+/* exported checkRiddleAnswers */
 
 
 var guessForm = document.getElementById('guess-form');
 var totalGuesses = 0
 
-function() {
+function checkRiddleAnswer() {
     var guess = guessForm.customElements.number.value;
 
     if (guess === 7) {

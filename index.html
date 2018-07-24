@@ -9,39 +9,112 @@
 </head>
 
 <body>
-    <h1>Some Title</h1>
+    <h1>Jack's Page</h1>
 
-    <form id="facts-form"
-        onsubmit="return checkJSAnswers()"
-        onreset="return resetJSAnswers()">
+    <h2>Bio</h2>
+        <p>
+            I was raised by wolves.
+        </p>
+    <h2>The Game Zone</h2>
 
-        <fieldset>
-            <label>Who invented JavaScript</label>
-            <p> <input type="text" name="inventor" value="Eich" required/> </p>
-        </fieldset>
+    <form id="about-me-form"
+        onsubmit="return checkAboutMeAnswers()"
+        onreset="return resetAboutMeAnswers()">
 
-        <fieldset>
-            <p>
+        <h3>How well do you know me?</h3>
 
-            </p>
-        </fieldset>
+        <div>
 
-        <button id="js-submit" type="submit">Check Answers</button>
-        <button id="js-reset" type="reset">Play Again</button>
+            <fieldset>
+                <legend>"Deep" questions, with Jack Handy</legend>
+                <p class="question">What is my favorite sea animal?</p>
+                <input type="text" name="sea-animal" value="" required/>
+            </fieldset>
 
+            <fieldset>
+                <legend>Pets</legend>
+                <p class="question">Check all the pets that I've had.</p>
+                <label for="dog">Dog</label>
+                <input type="checkbox" name="pets" value="dog"/>
+                <label for="cat">Cat</label>
+                <input type="checkbox" name="pets" value="cat"/>
+                <label for="fish">Fish</label>
+                <input type="checkbox" name="pets" value="fish"/>
+                <label for="hamster">Hamster</label>
+                <input type="checkbox" name="pets" value="hamster"/>
+                <label for="snake">Snake</label>
+                <input type="checkbox" name="pets" value="snake"/>
+                <label for="iguana">Iguana</label>
+                <input type="checkbox" name="pets" value="iguana"/>
+                <label for="tarantula">Tarantula</label>
+                <input type="checkbox" name="pets" value="tarantula"/>
+            </fieldset>
+
+
+            <fieldset>
+                <legend>Music</legend>
+                <p class="question">Black Sabbath or AC/DC?</p>
+                <label for="sabbath">Black Sabbath</label>
+                <input type="radio" name="classic-rock" value="sabbath" required/>
+                <label for="acdc">AC/DC</label>
+                <input type="radio" name="classic-rock" value="acdc" required/>
+
+                <p class="question">Black Flag or Rollins Band?</p>
+                <label for="black-flag">Black Flag</label>
+                <input type="radio" name="hardcore" value="black-flag" required/>
+                <label for="rollins-band">Rollins Band</label>
+                <input type="radio" name="hardcore" value="rollins-band" required/>
+            </fieldset>
+
+            <fieldset>
+                <legend>Books</legend>
+                <p class="question">Which book did I read in high school and love?</p>
+                <select>
+                    <option value="catcher">The Catcher in the Rye</option>
+                    <option value="frankenstein">Frankenstein</option>
+                    <option value="atlas">Atlas Shrugged</option>
+                    <option value="huckleberry">The Adventures of Huckleberry Finn</option>
+                </select>
+            </fieldset>
+
+        </div>
+
+        <div>
+            <button id="js-submit" type="submit">Check Answers</button>
+            <button id="js-reset" type="reset">Play Again</button>
+        </div>
 
 
     </form>
 
-    <form id="guess form" onsubmit="return checkGuessAnswer">
-        <p>Guess a number between 1 and 10 (inclusive)</p>
-        <input name="number" require />
-        <button type="submit" name="guess">Guess</button>
+
+    <h3>How good are you at guessing?</h3>
+
+    <form id="jersey-form"
+        onsubmit="return checkJerseyAnswer">
+        <fieldset>
+            <legend>Sports</legend>
+            <p class="question">What was my number when I played football?</p>
+            <input name="jersey" require />
+            <button type="submit" name="jersey">Guess</button>
+        </fieldset>
     </form>
 
+    <h3>How good are you at riddling?</h3>
 
-    <script src="check-js-answers.js"></script>
-    <script src="check-guess-answers.js"></script>
+    <form id="riddle-form"
+        onsubmit="return checkRiddleAnswer">
+        <fieldset>
+            <legend>Riddle me timbers</legend>
+            <p class="question">How many codes must a man write down before you call him a man?</p>
+            <input name="riddle" require />
+            <button type="submit" name="riddle">Guess</button>
+        </fieldset>
+    </form>
+
+    <script src="about-me-game.js"></script>
+    <script src="guess-game.js"></script>
+    <script src="riddle-game.js"></script>
 
 </body>
 

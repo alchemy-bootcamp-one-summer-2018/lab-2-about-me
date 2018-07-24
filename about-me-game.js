@@ -1,4 +1,4 @@
-/* exported checkJSAnswers, resetJSAnswers */
+/* exported checkAboutMeAnswers, resetAboutMeAnswers */
 
 
 var form = document.getElementById('facts-form');
@@ -18,7 +18,7 @@ formElemets = {
 
 var score = 0;
 
-function checkJSAnswers() {
+function checkAboutMeAnswers() {
     console.log('checkJSAnswers called');
     console.dir(form);
 
@@ -55,7 +55,7 @@ function checkJSAnswers() {
 }
 
 
-function resetJSAnswers(){
+function resetAboutMeAnswers(){
     results.innerText = '';
     submit.disabled = false
     reset.disabled = true

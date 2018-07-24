@@ -1,0 +1,17 @@
+
+h3 {
+    color: darkred;
+}
+
+legend {
+    color: indianred;
+}
+
+p.question {
+    color: darksalmon;
+    font-family: sans-serif;
+}
+
+label {
+    color: darkkhaki;
+}
