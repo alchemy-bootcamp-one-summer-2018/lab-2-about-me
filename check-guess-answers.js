@@ -36,9 +36,6 @@ function checkGuessAnswer() {
             console.log('too high');
             guessResults.innerText = 'Last guess was too high!';
         }
-        // now we can increment and hold onto the value across
-        // calls to this function (this function only increases
-        // the value, it doesn't initialize the value)
         totalGuesses = totalGuesses + 1;
         console.log(totalGuesses);
     }
