@@ -76,10 +76,11 @@
     </form>
 
     <form id="guess-form" onsubmit="return checkGuessAnswer()">
-        <p>Guess a number between 1 and 10 (inclusive)</p>
-        <input name="number" require>
-        <button type="submit">Guess</button>
-
+        <p>How many wookies does it take to fix a hyperdrive?</p>
+        <p>You have 5 guesses.</p>
+        <input type="text" name="number" require>
+        <button id="guess-submit" type="submit">Guess</button>
+        <div id="empty-button"></div>
         <p id="guess-results"></p>
     </form>
     
