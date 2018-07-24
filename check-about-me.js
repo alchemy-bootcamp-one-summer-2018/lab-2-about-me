@@ -9,7 +9,11 @@ function checkAboutMe() {
     var aboutMe = document.getElementById('about-me');
     console.log('aboutMe: ', aboutMe);
 
-    var aboutMeResults = document.getElementById('about-me-results');
+    var q1Results = document.getElementById('question1-results');
+    var q2Results = document.getElementById('question2-results');
+    var q3Results = document.getElementById('question3-results');
+    var q4Results = document.getElementById('question4-results');
+    var q5Results = document.getElementById('question5-results');
     
    
    
@@ -46,39 +50,64 @@ function checkAboutMe() {
     // If answers are correct, add 1 point to score & test w/ console.log:
     // Question 1
     if(passport === 'true') {
+        var q1 = 'Correct!'
         score += 1;
+    } else {
+        var q1 = 'Try again.'
     }
     console.log('score: ', score);
+    console.log('q1: ', q1)
 
     // Question 2
-    if(countries === '7') {
+    if(countries === '7') { 
+        var q2 = 'Correct!'
         score += 1;
+    } else {
+        var q2 = 'Try again.'
     }
     console.log('score: ', score);
+    console.log('q2: ', q2)
 
     // Question 3
     if(foods === 'ice cream') {
+        var q3 = 'Correct!'
         score += 1;
+    } else {
+        var q3 = 'Try again.'
     }
     console.log('score: ', score);
+    console.log('q3: ', q3)
 
     // Question 4
     if(yearbook === 'most likely to be late to everything') {
+        var q4 = 'Correct!'
         score += 1;
+    } else {
+        var q4 = 'Try again.'
     }
     console.log('score: ', score);
+    console.log('q4: ', q4)
 
     // Question 5
     if(band === 'false') {
+        var q5 = 'Correct!'
         score += 1;
+    } else {
+        var q5 = 'Try again.'
     }
     console.log('score: ', score);
+    console.log('q5: ', q5)
 
 
 
     // PART III: Report results to the user through the webpage
 
-
+    // Insert text into the html tags with the id for each question (i.e. question1-results)
+    q1Results.innerText = 'Question 1: ' + q1;
+    q2Results.innerText = 'Question 2: ' + q2;
+    q3Results.innerText = 'Question 3: ' + q3;
+    q4Results.innerText = 'Question 4: ' + q4;
+    q5Results.innerText = 'Question 5: ' + q5;
 
     // Prevents browser window from refreshing automatically
     return false;
