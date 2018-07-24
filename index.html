@@ -61,9 +61,20 @@
                 <button id="aboutMe-reset" type="reset">Try again!</button>
             </p>
         </div>
+        <div>
+            <p id="aboutMe-results"></p>
+        </div>
     </form>
 
-    <script src="check-aboutme-answers.js"></script>
+    <form id="guess-form" onsubmit="return checkGuesserAnswers()">
+        <p>How many European countries have I visited?</p>
+        <input name = "number" require>
+        <button type="submit">Take a guess!</button>
+
+        <p id="guesser-results"></p>
+    </form>
+
+    <script src="check-aboutMe-answers.js"></script>
     <script src="check-guesser-answers.js"></script>
 
 </body>
