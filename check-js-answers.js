@@ -31,12 +31,15 @@ function checkJSAnswers() {
     var noWay = elements.noWay.value;
     //a range group value input is checked
     var heartOfGold = elements.heartOfGold.value;
+    // a selector value input checked
+    var hanSolo = elements.hanSolo.value;
 
     // inspecting those value to make sure we got it
     console.log('myName', myName);
     console.log('thatsImpossible', thatsImpossible);
     console.log('noWay', noWay);
     console.log('heartOfGold', heartOfGold);
+    console.log('hanSolo', hanSolo);
     // PART 2 - Check those answers (values)
 
     // keep count of correct answers in a variable
@@ -64,7 +67,10 @@ function checkJSAnswers() {
         //increment the correct count
         correct = correct + 1;
     }
-
+    //check answer 5
+    if(hanSolo === 'no') {
+        correct = correct + 1;
+    }
     // PART 3 - Report results to the user
 
     // inner text for freeform text response

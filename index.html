@@ -51,10 +51,23 @@
             <div>
                 <p>On a scale of 1-10 how gold is my heart?</p>
                     <label>
-                        <input type="range" name="heartOfGold" step="1" min="0" max="10">
+                        <input id="range-input" type="range" name="heartOfGold" step="1" min="0" max="10">
+                        <span id="range-display"></span>
                     </label>
                     <p>0</p>
+                    <p>5</p>
                     <p>10</p>
+            </div>
+            <div>
+                <p>Am I comparing myself to the incredible Han Solo?</p>
+                <label>
+                    <select name="hanSolo">
+                        <option value="select">--select one--</option>
+                        <option value="why">Why would I think that?</option>
+                        <option value="yes">Yes you are you pathetic nerf herder</option>
+                        <option value="no">No of course not, you are the best spaceship captain</option>
+                    </select>
+                </label>
             </div>
             <button id="js-submit" type="submit">Check Answers</button>
             <button id="js-reset" type="reset" disabled>Play Again</button>
