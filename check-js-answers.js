@@ -7,7 +7,7 @@ var factResults = document.getElementById('js-results');
 var factSubmit = document.getElementById('js-submit');
 var factReset = document.getElementById('js-reset');
 
-// function that will run when "submit" event happens on 
+// function that will run when "submit" event happens on
 // form (because we put onsubmit="return checkJSAnswers()")
 function checkJSAnswers() {
 
@@ -29,12 +29,14 @@ function checkJSAnswers() {
     var thatsImpossible = elements.thatsImpossible.value;
     // a radio group value input is checked
     var noWay = elements.noWay.value;
+    //a range group value input is checked
+    var heartOfGold = elements.heartOfGold.value;
 
     // inspecting those value to make sure we got it
     console.log('myName', myName);
     console.log('thatsImpossible', thatsImpossible);
     console.log('noWay', noWay);
-
+    console.log('heartOfGold', heartOfGold);
     // PART 2 - Check those answers (values)
 
     // keep count of correct answers in a variable
@@ -44,8 +46,7 @@ function checkJSAnswers() {
     if(myName.toLowerCase() === 'mack') {
         // if correct, add 1 to correct count
         correct = correct + 1;
-    }
-    
+    }       
     // check answer 2
     if(thatsImpossible.toLowerCase() === 'yes') {
         // increment the correct count
@@ -54,6 +55,13 @@ function checkJSAnswers() {
 
     //check answer 3
     if(noWay.toLowerCase() === 'maybe') {
+        //increment the correct count
+        correct = correct + 1;
+    }
+
+    //check answer 4
+    if(heartOfGold >= '7') {
+        //increment the correct count
         correct = correct + 1;
     }
 

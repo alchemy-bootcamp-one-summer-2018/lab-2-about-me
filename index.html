@@ -47,9 +47,17 @@
                     <input type="radio" name="noWay"
                         value="idk" required> Sorry I wasn't paying attention :(.
                 </label>
-        </div>
-        <button id="js-submit" type="submit">Check Answers</button>
-        <button id="js-reset" type="reset" disabled>Play Again</button>
+            </div>
+            <div>
+                <p>On a scale of 1-10 how gold is my heart?</p>
+                    <label>
+                        <input type="range" name="heartOfGold" step="1" min="0" max="10">
+                    </label>
+                    <p>0</p>
+                    <p>10</p>
+            </div>
+            <button id="js-submit" type="submit">Check Answers</button>
+            <button id="js-reset" type="reset" disabled>Play Again</button>
 
         <p id="js-results"></p>
     </form>
