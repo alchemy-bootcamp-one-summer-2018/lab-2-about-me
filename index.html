@@ -75,11 +75,16 @@
         <p id="js-results"></p>
     </form>
 
-    <form id="guess-form" onsubmit="return checkGuessAnswer()">
+    <form id="guess-form" 
+        onsubmit="return checkGuessAnswer()"
+        onreset="setGameOver()">
+
         <p>How many wookies does it take to fix a hyperdrive?</p>
         <p>You have 5 guesses.</p>
+
         <input type="text" name="number" require>
         <button id="guess-submit" type="submit">Guess</button>
+        <button id="guess-reset" type="reset">Reset</button>
         <div id="empty-button"></div>
         <p id="guess-results"></p>
     </form>

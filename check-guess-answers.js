@@ -1,9 +1,10 @@
-/* exported checkGuessAnswer */
+/* exported checkGuessAnswer , setGameOver */
 
 // get the elements we need to use
 var guessForm = document.getElementById('guess-form');
 var guessResults = document.getElementById('guess-results');
 var guessSubmit = document.getElementById('guess-submit');
+var guessReset = document.getElementById('guess-reset');
 
 // track "state" _across_ calls to checkGuessAnswer
 var totalGuesses = 0;
@@ -21,6 +22,8 @@ function checkGuessAnswer() {
         console.log('no more guesses');
         guessResults.innerText = 'GAME OVER!';
         guessResults.style.backgroundColor = 'red';
+        guessSubmit.disabled = true;
+        guessReset.disabled = false;
     }
     else {
         guessResults.innerText = 'Wrong, you will never be a glorious spaceship captain!';
@@ -44,9 +47,9 @@ function checkGuessAnswer() {
 }
 
 function setGameOver() {
-    guessSubmit.disabled = true;
-    var resetButton = document.createElement ('button');
-    resetButton.textContent = 'Start New Game';
-    document.body.appendChild(resetButton);
+    guessResults.innerText = '';
+    guessSubmit.disabled = false;
+    guessReset.disabled = true;
+    totalGuesses = 0;
 }
 
