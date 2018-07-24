@@ -6,17 +6,23 @@ function checkAboutMe() {
     console.log('checkAboutMe working');
     
     // Reference the elements used in the functions below & check to make sure it's working
+    
+    // Getting info from About Me form
     var aboutMe = document.getElementById('about-me');
     console.log('aboutMe: ', aboutMe);
 
+    // Getting elements for results display
+    var finalScore = document.getElementById('about-me-score');
     var q1Results = document.getElementById('question1-results');
     var q2Results = document.getElementById('question2-results');
     var q3Results = document.getElementById('question3-results');
     var q4Results = document.getElementById('question4-results');
     var q5Results = document.getElementById('question5-results');
     
-   
-   
+   // Getting button elements for enabling/disabling
+   var aboutMeSubmit = document.getElementById('about-me-submit');
+   var aboutMeReset = document.getElementById('about-me-reset');
+
     // PART I: Get the value of the user input for each question
 
     // Create a variable to store the array of data that contains user input information & test it
@@ -50,70 +56,85 @@ function checkAboutMe() {
     // If answers are correct, add 1 point to score & test w/ console.log:
     // Question 1
     if(passport === 'true') {
-        var q1 = 'Correct!'
+        var q1 = 'Correct';
         score += 1;
     } else {
-        var q1 = 'Try again.'
+        var q1 = 'Try again';
     }
     console.log('score: ', score);
-    console.log('q1: ', q1)
+    console.log('q1: ', q1);
 
     // Question 2
     if(countries === '7') { 
-        var q2 = 'Correct!'
+        var q2 = 'Correct';
         score += 1;
     } else {
-        var q2 = 'Try again.'
+        var q2 = 'Try again';
     }
     console.log('score: ', score);
-    console.log('q2: ', q2)
+    console.log('q2: ', q2);
 
     // Question 3
     if(foods === 'ice cream') {
-        var q3 = 'Correct!'
+        var q3 = 'Correct';
         score += 1;
     } else {
-        var q3 = 'Try again.'
+        var q3 = 'Try again';
     }
     console.log('score: ', score);
-    console.log('q3: ', q3)
+    console.log('q3: ', q3);
 
     // Question 4
     if(yearbook === 'most likely to be late to everything') {
-        var q4 = 'Correct!'
+        var q4 = 'Correct';
         score += 1;
     } else {
-        var q4 = 'Try again.'
+        var q4 = 'Try again';
     }
     console.log('score: ', score);
-    console.log('q4: ', q4)
+    console.log('q4: ', q4);
 
     // Question 5
     if(band === 'false') {
-        var q5 = 'Correct!'
+        var q5 = 'Correct';
         score += 1;
     } else {
-        var q5 = 'Try again.'
+        var q5 = 'Try again';
     }
     console.log('score: ', score);
-    console.log('q5: ', q5)
+    console.log('q5: ', q5);
 
 
 
     // PART III: Report results to the user through the webpage
 
-    // Insert text into the html tags with the id for each question (i.e. question1-results)
+    // Tell the user their score
+    finalScore.innerText = 'You got ' + score + ' out of 5 correct.';
+
+    // Tell the user which questions they got right and which ones they didn't
     q1Results.innerText = 'Question 1: ' + q1;
     q2Results.innerText = 'Question 2: ' + q2;
     q3Results.innerText = 'Question 3: ' + q3;
     q4Results.innerText = 'Question 4: ' + q4;
     q5Results.innerText = 'Question 5: ' + q5;
 
+    // Disable the submit button
+    aboutMeSubmit.disabled = true;
+
+    // Enable the reset button
+    aboutMeReset.disabled = false;
+
     // Prevents browser window from refreshing automatically
     return false;
 
 }
 
-
+// This function will run whenever the user presses the Try Again button
+function resetAboutMe() {
+    // resets results and button properties to original settings
+    finalScore.innerText = '';
+    aboutMeSubmit.disabled = false;
+    aboutMeReset.disabled = true;
+}
 
 
