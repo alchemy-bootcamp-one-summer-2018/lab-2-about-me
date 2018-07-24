@@ -36,7 +36,8 @@ function checkJSAnswers() {
     if(myName.toLowerCase() === 'mack') {
         // if correct, add 1 to correct count
         correct = correct + 1;
-    }       
+    }    
+    
     // check answer 2
     if(thatsImpossible.toLowerCase() === 'yes') {
         // increment the correct count

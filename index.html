@@ -7,7 +7,15 @@
     <link rel="stylesheet" href="main.css">
 </head>
 <body>
-    <h1>Mack The Best Spaceship Captain of All Time</h1>
+    <h1 id="header-one">Mack The Best Spaceship Captain of All Time</h1>
+    <h3 id="header-two">About Me:</h3>
+    <ul>
+        <li class="list-one">My name is Mack and I am one of the best Spaceship Captains in the galaxy</li>
+        <li class="list-one">No I am not Han Solo (but I wish I was).</li>
+        <li class="list-one">Some say I did <em>the</em> Kessel Run in 12 Parsecs! Others... we dont talk about them.</li>
+        <li class="list-one">I always shoot first but claim innocence.</li>
+        <li class="list-one">My Heart is Gold. Like <strong>GOLD</strong> gold.</li>
+    </ul>
 
     <form id="facts-form" 
           onsubmit="return checkJSAnswers()"
@@ -54,9 +62,9 @@
                         <input id="range-input" type="range" name="heartOfGold" step="1" min="0" max="10">
                         <span id="range-display"></span>
                     </label>
-                    <p>0</p>
-                    <p>5</p>
-                    <p>10</p>
+                    <p class="range-value">0</p>
+                    <p class="range-value">5</p>
+                    <p class="range-value">10</p>
             </div>
             <div>
                 <p>Am I comparing myself to the incredible Han Solo?</p>
