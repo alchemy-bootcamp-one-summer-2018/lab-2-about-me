@@ -95,9 +95,23 @@
 
     </form>
 
-    <form id="guessing-game" onsubmit="return checkGuessAnswer()">
+    <form id="guessing-game" onsubmit="return checkGuess()" onreset="return resetGuess()">
+        
+        <h2>Guessing Game</h2>
+        <p>How many tries does it take you to guess a random number between 1 and 100?</p>
+
+        <div>
+            <p>Guess a number between 1 and 100: </p>
+                
+            <label>
+                <input type="number" name="guess" required>
+            </label>
+            <button type="submit" id="guess-submit">Check Guess</button>
+            <button type="reset" id="guess-reset" disabled>Try Again</button>         
+        </div>
 
     </form>
     <script src="./check-about-me.js"></script>
+    <script src="./check-guess-answer.js"></script>
 </body>
 </html>
