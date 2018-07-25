@@ -31,9 +31,18 @@ function countTags() {
         // Adding tag counts to the Tag Count object with tag names as keys
         tagCount[tag] = matches.length;
         console.log('tagCount: ', tagCount);
+    }
+
+    console.log('tagCount2: ', tagCount);
+
+    for(i = 0; i < tags.length; i++) {
+
+        // Get key from tagCount
+        var key = Object.keys(tagCount)[i];
+        console.log('key: ', key);
 
         // Append list item in html
-        html += '<li>' + tag + ': ' + tagCount[tag] + '</li>';
+        html += '<li>' + key + ': ' + tagCount[tag] + '</li>';
         if(i === (tags.length - 1)) {
             html += '</ul>';
         }
