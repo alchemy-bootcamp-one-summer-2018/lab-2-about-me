@@ -24,12 +24,24 @@ function checkJSAnswers() {
 
     if (vegetable.toLowerCase() === 'yes') {
         correct = correct + 1;
-    } //so I'm calling a function here???
+    }
 
     if (misdemeanors.toLowerCase() === 'yes') {
         correct = correct + 1;
     }
-    if (sister.toLowerCase())
+
+    if (sister.toLowerCase() === 'yes') {
+        correct = correct + 1;
+    }
+
+    if (moon.toLowerCase() === '286 million') {
+        correct = correct + 1;
+    }
+
+    if (tall.toLowerCase() === 'yes') {
+        correct = correct +1;
+    }
+
 
     factsResults.innerText = 'Congrats! You got ' + correct + ' out of 5 correct';
     factsSubmit.disabled = true;
