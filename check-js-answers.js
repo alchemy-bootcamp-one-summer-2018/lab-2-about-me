@@ -35,7 +35,6 @@ function checkJSAnswers() {
 
     // keep count of correct answers in a variable
     var correct = 0;
-
     // check answer 1
     if(myName.toLowerCase() === 'mack') {
         // if correct, add 1 to correct count
