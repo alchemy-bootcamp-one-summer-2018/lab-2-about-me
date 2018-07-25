@@ -3,7 +3,7 @@
 var factsForm = document.getElementById('facts-form');
 var factsSubmit = document.getElementById('js-submit');
 var factsReset = document.getElementById('js-reset');
-var factsResults = document.getElementById('js-results')
+var factsResults = document.getElementById('js-results');
 
 function checkJSAnswers() {
     console.log('checkJSAnswers called');
