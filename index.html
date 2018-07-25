@@ -10,10 +10,11 @@
     
     <h1>About Me:</h1>
     <p>Hi! My name is Sophie Graham I was born and raised in Portland! <br>
-        I love dessert, chocolate is my favorite! One of my favorite Portland <br>
-        pastimes is kayaking on the Willamette!</p>
+    Unlike me, my family is from Mississippi! I love dessert, chocolate is <br>
+    my favorite! One of my favorite Portland pastimes is kayaking on the <br>
+    Willamette! If I had to pick a favorite season, I'd say Summer!</p>
   
-    <h1> About me Game:</h1> 
+    <h1> About Me Game:</h1> 
    <form id="facts-form"
    onsubmit="return checkJSAnswers()"
    onreset="resetJSAnswers()">
@@ -48,7 +49,28 @@
         </label>
         </p>
    </div>
-   
+   <div>
+        <label>Where is my family from?</label>
+        <p><input type="text" name="family" required></p>
+    </div>
+    <div>
+        <p>What is my favorite season?</p>
+        <p>
+        <label>
+        <input type="radio" name="season" value="Fall" required> Fall
+        </label>
+        <label>
+        <input type="radio" name="season" value="Winter" required> Winter
+        </label>
+        <label>
+        <input type="radio" name="season" value="Spring" required> Spring
+        </label>
+        <label>
+        <input type="radio" name="season" value="summer" required> Summer
+        </label>
+        </p>
+        </div>
+
    <button id="js-submit" type="submit"> Check Answers</button>
    <button id="js-reset" type="reset" disabled>Play Again</button>
   
