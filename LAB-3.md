@@ -5,6 +5,14 @@ website by allowing the user to check the type of elements
 they would like to count. When they submit, your new code
 will provide element counts for the selected elements
 
+## Branch
+
+Make a branch for today's lab!
+
+```sh
+> git checkout -b element-count
+```
+
 ## Tools
 
 * Use a Manage a form submission like we did in yesterdays lab
