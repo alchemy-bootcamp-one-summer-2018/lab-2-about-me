@@ -3,29 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Guessing Game</title>
     <link rel="stylesheet" href="main.css">
 </head>
 <body>
-    <h1 id="header-one">Mack The Best Spaceship Captain of All Time</h1>
-    <h3 id="header-two">About Me:</h3>
-    <ul>
-        <li class="list-one">My name is Mack and I am one of the best Spaceship Captains in the galaxy</li>
-        <li class="list-one">No I am not Han Solo (but I wish I was).</li>
-        <li class="list-one">Some say I did <em>the</em> Kessel Run in 12 Parsecs! Others... we dont talk about them.</li>
-        <li class="list-one">I always shoot first but claim innocence.</li>
-        <li class="list-one">My Heart is Gold. Like <strong>GOLD</strong> gold.</li>
-    </ul>
-
-    <form id="facts-form" 
-          onsubmit="return checkJSAnswers()"
-          onreset="resetJSAnswers()">
+    <div>
+        <h1 id="header-one">Mack The Best Spaceship Captain of All Time</h1>
+        <h3 id="header-two">About Me:</h3>
+    </div>
+    <div>
+        <ul>
+            <li class="list-one">My name is Mack and I am one of the best Spaceship Captains in the galaxy.</li>
+            <li class="list-two">No I am not Han Solo (but I wish I was).</li>
+            <li class="list-three">Some say I did <em>the</em> Kessel Run in 12 Parsecs! Others... we dont talk about them.</li>
+            <li class="list-four">I always shoot first but claim innocence.</li>
+            <li class="list-five">My Heart is Gold. Like <strong>GOLD</strong> gold.</li>
+        </ul>
+    </div>
+        <form id="facts-form" 
+              onsubmit="return checkJSAnswers()"
+              onreset="resetJSAnswers()">
         <div>
-          <label>What is my name?</label>
+          <label class="list-one">What is my name?</label>
           <p><input type="text" name="myName" required></p>
         </div>
         <div>
-            <p>Did I do the Kessel Run in 12 Parsecs?</p>
+            <p class="list-three">Did I do the Kessel Run in 12 Parsecs?</p>
             <p>
                 <label>
                     <input type="radio" name="thatsImpossible" 
@@ -38,7 +41,7 @@
             </p>
         </div>
         <div>
-            <p>Did I shoot Greedo First?</p>
+            <p class="list-four">Did I shoot Greedo First?</p>
                 <label>
                     <input type="radio" name="noWay"
                         value="yes" required> Yes
@@ -57,17 +60,14 @@
                 </label>
             </div>
             <div>
-                <p>On a scale of 1-10 how gold is my heart?</p>
+                <p class="list-five">On a scale of 1-10 how gold is my heart?</p>
                     <label>
                         <input id="range-input" type="range" name="heartOfGold" step="1" min="0" max="10">
                         <span id="range-display"></span>
                     </label>
-                    <p class="range-value">0</p>
-                    <p class="range-value">5</p>
-                    <p class="range-value">10</p>
             </div>
             <div>
-                <p>Am I comparing myself to the incredible Han Solo?</p>
+                <p class="list-two">Am I comparing myself to the incredible Han Solo?</p>
                 <label>
                     <select name="hanSolo">
                         <option value="select">--select one--</option>
@@ -86,15 +86,16 @@
     <form id="guess-form" 
         onsubmit="return checkGuessAnswer()"
         onreset="setGameOver()">
-
+    <div>
         <p>How many wookies does it take to fix a hyperdrive?</p>
         <p>You have 5 guesses.</p>
-
+    </div>
+    <div>
         <input type="text" name="number" require>
         <button id="guess-submit" type="submit">Guess</button>
         <button id="guess-reset" type="reset">Reset</button>
-        <div id="empty-button"></div>
         <p id="guess-results"></p>
+    </div>
     </form>
     
 

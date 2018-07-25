@@ -1,0 +1,35 @@
+body {
+    background-color:gainsboro;
+    font-family:monospace;    
+}
+
+div {
+    background-color:ghostwhite;
+}
+#header-one {
+    background-color:steelblue;
+}
+
+#header-two {
+    background-color:steelblue;
+}
+
+.list-one {
+    color:orangered;
+}
+
+.list-two {
+    color:green;
+}
+
+.list-three {
+    color:blueviolet;
+}
+
+.list-four {
+    color:pink;
+}
+
+.list-five {
+    color:blue;
+}
