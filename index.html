@@ -16,9 +16,23 @@
                 What type of dessert do I like?</label>
                 <p><input type="text" name="dessert" required></p>
         </div>
-        <div><p>Do I like ice cream?</p>       
+        <div>
+            <p>Do I like pizza?</p>       
+        <p>
+        <label>
+            <input type="radio" name="runInBrowser"
+            value="yes" required> Yes    
+        </label>
+        <label>
+            <input type="radio" name="runInBrowser"
+            value="no" required> No
+        </label>
+        <label>What is my favorite ice cream flavor </label>
+        </p>
+        <p><input type="text" name="iceCream" required></p>
         </div>
         <button id="js-submit" type="submit">Check Answers</button>
+        <button id="js-reset" type="reset" disabled>Play again</button>
         <p id="js-results"></p>
     </form>
     <script src="check-js-answers.js"></script>
