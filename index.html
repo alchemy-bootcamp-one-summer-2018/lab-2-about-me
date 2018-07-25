@@ -5,114 +5,155 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Lab #2</title>
+    <link rel="stylesheet" href="normalize.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato|Sacramento" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>About Me</h1>
-    <h2>Guessing Games</h2>
-    <form id="about-me" onsubmit="return checkAboutMe()" onreset="resetAboutMe()">
-
-        <div>
-            <p>I got my first passport at the age of 34.</p>
-                
-            <label>
-                <input type="radio" name="passport" value="true" required> True 
-            </label>
-
-            <label>
-                <input type="radio" name="passport" value="false" required> False 
-            </label>
-        </div>
-
-        <div>
-            <p>How many countries outside of the US have I traveled to?</p>
+        <div id="sarah-info">
+            <header>
+                <h1>Sarah Flynn</h1>
+            </header>
             
-            <label>
-                <input type="radio" name="countries" value="2" required> 2
-            </label>
+            <section id="bio">
+                <h2>A Brief Biography</h2>
+                <p>I grew up in a very rural area of upstate New York, on a dirt road 8 miles outside of the nearest tiny town. I lived about a mile up a hill from the this covered bridge.</p>
+                <img src="http://www.coveredbridgesite.com/ny/ny_images/buskirk_img_1096_1_portal_1_600.jpg" alt="Buskirk Covered Bridge">
 
-            <label>
-                <input type="radio" name="countries" value="7" required> 7
-            </label>
+                <p>I studied Physics and Astronomy for a couple of years at SUNY StonyBrook.</p>
+                <img src="https://www.suny.edu/media/suny/content-assets/images/campus-profiles/pics/StonyBrook-walkway-flag.jpg" alt="SUNY Stony Brook">
 
-            <label>
-                <input type="radio" name="countries" value="11" required> 11
-            </label>
+                <p>Then I studied creative writing at SUNY Oswego...</p>
+                <img src="https://www.commonapp.org/files/school/image/SUNY_Oswego_header_945x350.jpg" alt="SUNY Oswego">
+                <p>...and Eastern Washington University.</p>
+                <img src="http://thunderstruckdance.com/wp-content/uploads/2016/08/spokane-Depositphotos_74031503_web.jpg" alt="Spokane, Washington" id="ewu">
+
+            </section>
+
+            <section id="fact">
+                <h2>Fun Fact</h2>
+                <h3>Recluse? Woman of Mystery?</h3>
+                <p>It's very difficult to find a picture of me by searching my name on the internet, not because they aren't out there, but because my name is so common. You need more specific knowledge about me to find anything. For example, if you search "Sarah Flynn NRAO" you will find pictures of dubious quality from a research assitantship I did at the National Radio Astronomy Observatory 16 years ago.</p>
+                <p>In many of them my eyes are closed.</p>
+                <img src="https://www.cv.nrao.edu/~jmangum/reu/pictures/2001/P0000916.JPG" alt="Four students at NRAO front desk">
+                <p>Some are a bit askew.</p>
+                <img src="https://www.cv.nrao.edu/~jmangum/reu/pictures/2002/sarah-selby-vla-20020718-1.jpg" alt="Sideways picture from VLA">
+                <p>In some I'm wearing a hard hat.</p>
+                <img src="https://www.cv.nrao.edu/~jmangum/reu/pictures/2001/P0000860.JPG" alt="Four students wearing hard hats at VLA">
+                <p>Or some combination of the above...</p>
+                <img src="https://www.cv.nrao.edu/~jmangum/reu/pictures/2001/P0000859.JPG" alt="Wearing hard hat with eyes closed">
+            </section>
+
         </div>
 
-        <div>
-            <p>Which of these foods do I like the least?</p>
-            
-            <label>
-                <input type="radio" name="foods" value="chocolate" required> Chocolate
-            </label>
+        <div id="games">
+            <h2>Guessing Games</h2>
+            <form id="about-me" onsubmit="return checkAboutMe()" onreset="resetAboutMe()">
 
-            <label>
-                <input type="radio" name="foods" value="ice cream" required> Ice Cream
-            </label>
+                <div>
+                    <p>I got my first passport at the age of 34.</p>
+                        
+                    <label>
+                        <input type="radio" name="passport" value="true" required> True 
+                    </label>
 
-            <label>
-                <input type="radio" name="foods" value="pizza" required> Pizza
-            </label>
-        </div>
+                    <label>
+                        <input type="radio" name="passport" value="false" required> False 
+                    </label>
+                </div>
 
-        <div>
-            <p>At the end of my senior year of high school, my classmates voted to award me this title in our yearbook:</p>
+                <div>
+                    <p>How many countries outside of the US have I traveled to?</p>
+                    
+                    <label>
+                        <input type="radio" name="countries" value="2" required> 2
+                    </label>
+
+                    <label>
+                        <input type="radio" name="countries" value="7" required> 7
+                    </label>
+
+                    <label>
+                        <input type="radio" name="countries" value="11" required> 11
+                    </label>
+                </div>
+
+                <div>
+                    <p>Which of these foods do I like the least?</p>
+                    
+                    <label>
+                        <input type="radio" name="foods" value="chocolate" required> Chocolate
+                    </label>
+
+                    <label>
+                        <input type="radio" name="foods" value="ice cream" required> Ice Cream
+                    </label>
+
+                    <label>
+                        <input type="radio" name="foods" value="pizza" required> Pizza
+                    </label>
+                </div>
+
+                <div>
+                    <p>At the end of my senior year of high school, my classmates voted to award me this title in our yearbook:</p>
+                        
+                    <label>
+                        <input type="radio" name="yearbook" value="class clown" required> Class clown
+                    </label>
+
+                    <label>
+                        <input type="radio" name="yearbook" value="most likely to succeed" required> Most likely to succeed
+                    </label>
+
+                    <label>
+                        <input type="radio" name="yearbook" value="most likely to be late to everything" required> Most likely to be late to everything
+                    </label>
+                </div>
+
+                <div>
+                    <p>I was in a band in high school.</p>
+                        
+                    <label>
+                        <input type="radio" name="band" value="true" required> True 
+                    </label>
+
+                    <label>
+                        <input type="radio" name="band" value="false" required> False 
+                    </label>
+                </div>
+
+                <button type="submit" id="about-me-submit">Check Answers</button>
+                <button type="reset" id="about-me-reset" disabled>Try Again</button>
+
+                <h4 id="about-me-score"></h4>
+                <p id="question1-results"></p>
+                <p id="question2-results"></p>
+                <p id="question3-results"></p>
+                <p id="question4-results"></p>
+                <p id="question5-results"></p>
+
+            </form>
+
+            <form id="guessing-game" onsubmit="return checkGuess()" onreset="return resetGuess()">
                 
-            <label>
-                <input type="radio" name="yearbook" value="class clown" required> Class clown
-            </label>
+                <h2>Guessing Game</h2>
+                <p>Can you guess a random number between 1 and 100 in ten guesses or less?</p>
 
-            <label>
-                <input type="radio" name="yearbook" value="most likely to succeed" required> Most likely to succeed
-            </label>
+                <div>
+                    <p>Guess a number between 1 and 100: </p>
+                        
+                    <label>
+                        <input type="number" name="guess" id="input" required>
+                    </label>
+                    <button type="submit" id="guess-submit">Check Guess</button>
+                    <button type="reset" id="guess-reset" disabled>Try Again</button>
+                    <p id="guessFeedback"></p>       
+                </div>
 
-            <label>
-                <input type="radio" name="yearbook" value="most likely to be late to everything" required> Most likely to be late to everything
-            </label>
+            </form>
+
+            <script src="./check-about-me.js"></script>
+            <script src="./check-guess-answer.js"></script>
         </div>
-
-        <div>
-            <p>I was in a band in high school.</p>
-                
-            <label>
-                <input type="radio" name="band" value="true" required> True 
-            </label>
-
-            <label>
-                <input type="radio" name="band" value="false" required> False 
-            </label>
-        </div>
-
-        <button type="submit" id="about-me-submit">Check Answers</button>
-        <button type="reset" id="about-me-reset" disabled>Try Again</button>
-
-        <h4 id="about-me-score"></h4>
-        <p id="question1-results"></p>
-        <p id="question2-results"></p>
-        <p id="question3-results"></p>
-        <p id="question4-results"></p>
-        <p id="question5-results"></p>
-
-    </form>
-
-    <form id="guessing-game" onsubmit="return checkGuess()" onreset="return resetGuess()">
-        
-        <h2>Guessing Game</h2>
-        <p>Can you guess a random number between 1 and 100 in ten guesses or less?</p>
-
-        <div>
-            <p>Guess a number between 1 and 100: </p>
-                
-            <label>
-                <input type="number" name="guess" id="input" required>
-            </label>
-            <button type="submit" id="guess-submit">Check Guess</button>
-            <button type="reset" id="guess-reset" disabled>Try Again</button>
-            <p id="guessFeedback"></p>       
-        </div>
-
-    </form>
-    <script src="./check-about-me.js"></script>
-    <script src="./check-guess-answer.js"></script>
 </body>
 </html>
