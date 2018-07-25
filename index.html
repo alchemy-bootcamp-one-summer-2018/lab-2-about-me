@@ -76,8 +76,34 @@
         </div>
     </form>
 
+    <form id="tag-checker" onsubmit="return tagCounter()">
+        <div>
+            <label>
+                <input type="checkbox" name="tags" value="p"> p 
+            </label>
+            <label>
+                <input type="checkbox" name="tags" value="div"> div 
+            </label>
+            <label>
+                    <input type="checkbox" name="tags" value="button"> button 
+            </label>
+            <label>
+                    <input type="checkbox" name="tags" value="form"> form
+            </label>
+            <label>
+                    <input type="checkbox" name="tags" value="script"> script 
+            </label>
+            <p>
+                <button type="submit">See how many of each tag is in this page's code!</button>
+            </p>
+        </div>
+
+
+    </form>
+
     <script src="check-aboutMe-answers.js"></script>
     <script src="check-guesser-answer.js"></script>
+    <script src="tag-checker-answer.js"></script>
 
 </body>
 </html>
