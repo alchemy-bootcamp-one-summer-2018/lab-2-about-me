@@ -98,8 +98,19 @@
     </div>
     </form>
     
+    <form onsubmit="return countTags()">
+        <label> <input type="checkbox" name="tags" value="p"> p</label>
+        <label> <input type="checkbox" name="tags" value="div"> div</label>
+        <label> <input type="checkbox" name="tags" value="option"> option</label>
+        <label> <input type="checkbox" name="tags" value="button"> button</label>
+        <label> <input type="checkbox" name="tags" value="strong"> strong</label>
+        <label> <input type="checkbox" name="tags" value="ul"> ul</label>
+        <label> <input type="checkbox" name="tags" value="li"> li</label>
+        <button>submit</button>
+    </form>
 
     <script src="check-js-answers.js"></script>
     <script src="check-guess-answers.js"></script>
+    <script src="element-counter.js"></script>
 </body>
 </html>
