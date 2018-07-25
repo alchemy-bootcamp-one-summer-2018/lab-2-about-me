@@ -11,3 +11,5 @@
 
 
 ## Notes
+- fix for loop in about me game
+- fix state issue in guess game

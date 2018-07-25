@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Lab 2</title>
     <link rel="stylesheet" href="main.css" />
 </head>
 
@@ -77,23 +77,23 @@
                         <p class="question">Check all the pets that I've had.</p>
 
                         <label for="dog">
-                            <input type="checkbox" name="pets" value="dog"/>
+                            <input id="dog" type="checkbox" name="pets" value="dog"/>
                             Dog
                         </label>
                         <label for="cat">
-                            <input type="checkbox" name="pets" value="cat"/>
+                            <input id="cat" type="checkbox" name="pets" value="cat"/>
                             Cat
                         </label>
                         <label for="fish">
-                            <input type="checkbox" name="pets" value="fish"/>
+                            <input id="fish" type="checkbox" name="pets" value="fish"/>
                             Fish
                         </label>
                         <label for="snake">
-                            <input type="checkbox" name="pets" value="snake"/>
+                            <input id="snake" type="checkbox" name="pets" value="snake"/>
                             Snake
                         </label>
                         <label for="tarantula">
-                            <input type="checkbox" name="pets" value="tarantula"/>
+                            <input id="tarantula" type="checkbox" name="pets" value="tarantula"/>
                             Tarantula
                         </label>
                     </fieldset>
@@ -102,23 +102,23 @@
                         <legend>Music</legend>
                         <p class="question">Black Sabbath or AC/DC?</p>
                         <label for="sabbath">
-                            <input type="radio" name="classicRock" value="sabbath" required/>
+                            <input id="sabbath" type="radio" name="classicRock" value="sabbath" required/>
                             Black Sabbath
                         </label>
                         <br />
                         <label for="acdc">
-                            <input type="radio" name="classicRock" value="acdc" required/>
+                            <input id="acdc" type="radio" name="classicRock" value="acdc" required/>
                             AC/DC
                         </label>
 
                         <p class="question">Black Flag or Rollins Band?</p>
                         <label for="black-flag">
-                            <input type="radio" name="hardcore" value="black-flag" required/>
+                            <input id="black-flag" type="radio" name="hardcore" value="black-flag" required/>
                             Black Flag
                         </label>
                         <br />
                         <label for="rollins-band">
-                            <input type="radio" name="hardcore" value="rollins-band" required/>
+                            <input id="rollins-band" type="radio" name="hardcore" value="rollins-band" required/>
                             Rollins Band
                         </label>
 
@@ -142,24 +142,29 @@
                     <button id="about-me-reset" type="reset">Play Again</button>
                 </div>
 
-                <p id="about-me-results">TEST</p>
+                <p id="about-me-results"></p>
 
             </form>
 
         </div>
+
         <div class="column">
             <h3 class="game-head">How good are you at guessing?</h3>
 
             <form id="jersey-form"
-                onsubmit="return checkJerseyAnswer">
+                onsubmit="return checkJerseyAnswer()">
                 <fieldset>
                     <legend>Sports</legend>
                     <p class="question">What was my number when I played football?</p>
                     <input name="jersey" require />
                     <button type="submit" name="jersey">Guess</button>
                 </fieldset>
+
+                <p id="jersey-results"></p>
             </form>
+
         </div>
+
         <div class="column">
             <h3 class="game-head">How good are you at riddling?</h3>
 
@@ -172,6 +177,7 @@
                     <button type="submit" name="riddle">Guess</button>
                 </fieldset>
             </form>
+
         </div>
     </div>
 

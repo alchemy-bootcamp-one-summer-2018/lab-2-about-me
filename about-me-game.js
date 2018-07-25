@@ -8,9 +8,12 @@ var aboutInterface = {
     results: document.getElementById('about-me-results'),
 };
 
+var test = [];
+
 function checkAboutMeAnswers() {
 
     var elements = aboutInterface.form.elements;
+
 
     var answerInput = {
         seaAnimal: elements.seaAnimal.value.toLowerCase(),
@@ -38,14 +41,33 @@ function checkAboutMeAnswers() {
 
     var score = 0;
 
-    for(var key in answerInput){
-        if((answerInput.hasOwnProperty(key)) &&
-            (answerInput.key === answerKey.key)){
-            score += 1;
+    // fix the following for loop
+
+/*
+    function(object1, object2){
+        for (var key in object){
+            if object1.key === object2.key
+                score += 1;
+
         }
     }
 
+    for(var key in answerInput){
+        for(var key in answerKey){
+            if answerInput.key === answerKey.key{
+                score += 1;
+            }
+        }
+    }
+*/
 
+
+    for(var key in answerInput){
+        if((answerInput.hasOwnProperty(key)) &&
+            (answerInput[key] === answerKey[key])){
+            score += 1;
+        }
+    }
 
     aboutInterface.results.innerText = `You got ${score} correct!`;
     aboutInterface.submit.disabled = true;

@@ -1,21 +1,27 @@
-/* exported checkGuessAnswers */
+/* exported checkJerseyAnswer */
 
+var guessInterface = {
+    form: document.getElementById('jersey-form'),
+    results: document.getElementById('jersey-results'),
+};
 
-var guessForm = document.getElementById('guess-form');
-var totalGuesses = 0
+var guessAttempts = 0;
 
-function checkGuessAnswer() {
-    var guess = guessForm.customElements.number.value;
+function checkJerseyAnswer() {
+    var guess = guessInterface.form.jersey.value;
 
-    if (guess === 7) {
+    console.log(guess);
+
+    if(guess === 38) {
         // let them know that they won
+        guessInterface.results.innerText = 'Right!';
+        console.log('they guessed correctly!');
     }
     else {
-        guessResults.innerText = 'Wrong';
-        totalGuesses += 1
-        console.log(totalGuesses)
+        guessInterface.results.innerText = 'Wrong';
+        guessAttempts += 1;
+        console.log(guessAttempts);
     }
 
-
-
+    return false;
 }
