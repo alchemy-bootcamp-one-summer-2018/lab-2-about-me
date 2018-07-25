@@ -1,4 +1,4 @@
-/* exported checkJSAnswers, resetJSAnswers */
+/* exported checkJSAnswers, resetJSAnswers, showVal */
 
 // Reference all the elements (by id) that we are going
 // to need to use in our functions
@@ -6,6 +6,12 @@ var factForm = document.getElementById('facts-form');
 var factResults = document.getElementById('js-results');
 var factSubmit = document.getElementById('js-submit');
 var factReset = document.getElementById('js-reset');
+var rangeDisplay = document.getElementById('range-display');
+
+//function that will display change of value when range is moved
+function showVal(newVal){
+    rangeDisplay.innerHTML = newVal;
+}
 
 // function that will run when "submit" event happens on
 // form (because we put onsubmit="return checkJSAnswers()")
@@ -37,7 +43,7 @@ function checkJSAnswers() {
         // if correct, add 1 to correct count
         correct = correct + 1;
     }    
-    
+
     // check answer 2
     if(thatsImpossible.toLowerCase() === 'yes') {
         // increment the correct count
