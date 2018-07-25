@@ -1,17 +1,20 @@
 header {
     display: block;
+    padding: 40px;
     text-align: center;
     font-size: 5em;
+    background-image: url(https://media.gadventures.com/media-server/cache/68/18/681877d5dff9ecff0353263ee6fa00ae.jpg);
 }
 
 h1 {
-    margin: 0.4em 0.1em 0.1em;
+    padding: 0.4em 0.1em 0.1em;
+    margin: 0px;
     text-shadow: 5px 5px 15px darkolivegreen;
     color: silver;
 }
 
 h2 {
-    margin: 1em;
+    padding: 1em;
     font-size: 4em;
     text-align: center;
     text-shadow: 5px 5px 15px maroon;
@@ -72,6 +75,10 @@ td img {
 #icon {
     width: 5%;
     margin: 0.1em;
+    border-color: lightgray !important;
+    border-style: groove;
+    border-width:5px;
+
 }
 
 #me {
@@ -85,8 +92,9 @@ td img {
     border-color: lightgray;
 }
 
-#bio {
+.bio-section {
     background: honeydew;
+    font-family: "Comic Sans MS", cursive, sans-serif;
 }
 
 figcaption {
@@ -111,7 +119,7 @@ button {
 }
 
 .column p.bio {
-    margin: 5em 2em;
+    margin: 2em 2em;
 }
 
 input.text {
