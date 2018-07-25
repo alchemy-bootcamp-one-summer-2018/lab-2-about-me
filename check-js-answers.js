@@ -63,7 +63,8 @@ function checkJSAnswers() {
     // PART 3 - Report results to the user
 
     // inner text for freeform text response
-    factResults.innerText = 'You got ' + correct + ' out of 5 right';
+    factResults.innerText = 'You got ' + correct + ' out of 5 right. Feel free to try again!';
+    factResults.style.backgroundColor = 'blue';
     factSubmit.disabled = true;
     factReset.disabled = false;
     return false;
