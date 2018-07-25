@@ -23,7 +23,7 @@
         <li>One out of eleven Claire's take milk in their tea.</li>
         <li>It would take 286 million Claire's stacked on top of each other to reach the moon.</li>
     </ul>
-
+    <h2>Claire Quiz</h2>
     <form id="facts-form"
         onsubmit="return checkJSAnswers()"
         onreset="resetJSAnswers()">
@@ -95,16 +95,22 @@
 
         <div>
             <br>
-            <button id="js-submit" type="submit">Check Answers</button>
+            <button id="js-submit" type="submit">Submit</button>
             <button id="js-reset" type="reset">Reset</button>
         </div>
 
         <p id="js-results"></p>
 
     </form>
+    <h2>Bonus Round</h2>
+    <form id="guess-form" onsubmit="return checkGuessAnswer()">
+        <p>Guess how many times I have been to Florida.</p>
+        <input name="florida" require>
+        <button type="submit">Submit</button>
+    </form>
+    <p id="guess-results"></p>
 
     <script src="check-js-answers.js"></script>
     <script src="check-guess-answers.js"></script>
 </body>
 </html>
-   
