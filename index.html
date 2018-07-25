@@ -38,15 +38,38 @@
 
     <h2>Quiz Time!</h2>
     <form id="facts-form"
-        onsubmit="return checkJSAnswers()">
+        onsubmit="return checkJSAnswers()"
+        onreset="resetJSAnswers()">
         <div>
             <label>What State Was I Born In?
                 <p><input type="text" name="state" required></p>
             </label>
         </div>
-        <button id="js-submit" type="submit">Submit</button>
+        <div>
+            <p>What job did I like the least?</p>
+            <p>
+                <label>
+                    <input type="radio" name="runInBrowser"
+                    value="Yes" required> PetSmart
+                </label>
+                <label>
+                    <input type="radio" name="runInBrowser"
+                        value="No" required>Preschool Teacher
+                </label>
+            </p>
+        </div>
+        <div>
+            <label>What condiment does America love as proven by my serving job?
+                <p><input type="text" name="condiment" required></p>
+            </label>
+        </div>
+        <button id="js-submit" type="submit">Submit!</button>
+        <button id="js-reset" type="reset" disabled>Play Again!</button>
+
+        <p id="js-results"></p>
         
     </form>
+    
     <script src="check-js-answers.js"></script>
 </body>
 </html>
