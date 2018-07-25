@@ -1,27 +1,29 @@
 
+/* exported checkAboutMe, resetAboutMe */
+
+var finalScore = document.getElementById('about-me-score');
+
+// Getting button elements for enabling/disabling
+var aboutMeSubmit = document.getElementById('about-me-submit');
+var aboutMeReset = document.getElementById('about-me-reset');
 
 function checkAboutMe() {
 
     // Check to make sure the script is successfully connected to index.html
     console.log('checkAboutMe working');
-    
+
     // Reference the elements used in the functions below & check to make sure it's working
-    
+
     // Getting info from About Me form
     var aboutMe = document.getElementById('about-me');
     console.log('aboutMe: ', aboutMe);
 
     // Getting elements for results display
-    var finalScore = document.getElementById('about-me-score');
     var q1Results = document.getElementById('question1-results');
     var q2Results = document.getElementById('question2-results');
     var q3Results = document.getElementById('question3-results');
     var q4Results = document.getElementById('question4-results');
     var q5Results = document.getElementById('question5-results');
-    
-   // Getting button elements for enabling/disabling
-   var aboutMeSubmit = document.getElementById('about-me-submit');
-   var aboutMeReset = document.getElementById('about-me-reset');
 
     // PART I: Get the value of the user input for each question
 
@@ -59,17 +61,17 @@ function checkAboutMe() {
         var q1 = 'Correct';
         score += 1;
     } else {
-        var q1 = 'Try again';
+        q1 = 'Try again';
     }
     console.log('score: ', score);
     console.log('q1: ', q1);
 
     // Question 2
-    if(countries === '7') { 
+    if(countries === '7') {
         var q2 = 'Correct';
         score += 1;
     } else {
-        var q2 = 'Try again';
+        q2 = 'Try again';
     }
     console.log('score: ', score);
     console.log('q2: ', q2);
@@ -79,7 +81,7 @@ function checkAboutMe() {
         var q3 = 'Correct';
         score += 1;
     } else {
-        var q3 = 'Try again';
+        q3 = 'Try again';
     }
     console.log('score: ', score);
     console.log('q3: ', q3);
@@ -89,7 +91,7 @@ function checkAboutMe() {
         var q4 = 'Correct';
         score += 1;
     } else {
-        var q4 = 'Try again';
+        q4 = 'Try again';
     }
     console.log('score: ', score);
     console.log('q4: ', q4);
@@ -99,7 +101,7 @@ function checkAboutMe() {
         var q5 = 'Correct';
         score += 1;
     } else {
-        var q5 = 'Try again';
+        q5 = 'Try again';
     }
     console.log('score: ', score);
     console.log('q5: ', q5);
