@@ -10,6 +10,7 @@ function checkGuessAnswer() {
     var guess = guessForm.elements.otter.value;
         if (guess == 'otter') {
         guessResult.innerText = 'yay!!';
+        console.log ('this is what user guessed', guess)
     
      }
 

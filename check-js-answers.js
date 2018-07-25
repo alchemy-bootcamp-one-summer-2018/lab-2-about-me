@@ -7,39 +7,53 @@ var factResult = document.getElementById("js-results");
 var factReset = document.getElementById("js-reset");
 
 
-
 function checkJSAnswers () {
-console.log ('checkJSAnswers called') 
+    console.log ('checkJSAnswers called') 
 
     var elements = factForm.elements;
     var school = elements.school.value;
     var mtv = elements.mtv.value;
-    var state = elements.state.value
-    var career = elements.career.value
+    var state = elements.state.value;
+    var career = elements.career.value;
+    var smell = elements.smell.value;
 
-    console.log('school var', school);
+    console.log('this is to see if variable is working', school);
 
     var correct = 0;
 
     if (school  === 'yes') {
     correct = correct + 1;
-    }   
+    }
 
-    if (school || mtv || state || career === 'yes') {
+    if (mtv  === 'yes') {
         correct = correct + 1;
-        }   
+    }
+
+   if (state  === 'yes') {
+     correct = correct + 1;
+    }
+
+    if (career  === 'yes') {
+        correct = correct + 1;
+       }
+
+    if (smell  === 'yes') {
+        correct = correct + 1;
+    }
+        
+
+    factResult.innerText = 'wow you got ' + correct + ' out of 5 right';
+    factSubmit.disabled = true; 
+    factReset.disabled = false;
+
+    return false;
+ }
 
 
-factResult.innerText = 'wow you got ' + correct + ' out of 5 right';
-factSubmit.disabled = true; 
-factReset.disabled = false;
-
-return false;
-
-}
 
 function resetJSAnswers() {
-    factResult.innerText = '';
+
+    factResults.innerText = '';
     factSubmit.disabled = false;
-    factReset.disabled = true;
+    factReset.disabled = true; 
 }

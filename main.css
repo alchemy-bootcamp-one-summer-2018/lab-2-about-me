@@ -1,0 +1,91 @@
+#body { 
+    box-sizing: border-box;
+    max-width: 100%;
+    margin: 0 auto;
+    position: relative}
+
+header {
+    color: #392a31;		
+    background: #fdfbf8;
+    padding: 20px;
+    }
+
+#container { 
+    width: 900px;
+    margin-left: 100px;
+    border: solid 2px #18BCBA;
+    padding: 60px;
+}
+
+h1 {	
+    font-family: 'Open Sans', sans-serif;	
+    font-size: 52px;	
+    font-weight: 600;	
+    line-height: 85px;	
+    text-align: left;
+    }
+    
+h2 {	
+    font-family: 'Open Sans', sans-serif;	
+    font-size: 18px;	
+    font-weight: 600;	
+    line-height: 30px;	
+    text-align: left;
+    margin-top: 0%;
+    text-transform: uppercase;
+    color: #9d0069;
+    background: #eeee;
+    padding: 10;
+    }
+
+h3 {	
+    font-family: 'Open Sans', sans-serif;	
+    font-size: 25px;	
+    font-weight: 500;	
+    line-height: 30px;	
+    }
+
+p {
+    font-family: 'Open Sans', sans-serif;	
+    font-size: 18px;}
+    .banner-text {
+    float:left;
+   
+    }
+    .myImage {
+    float: right;
+    width: 35%;
+    }
+    
+#submit{
+    height: 50px;
+    color: #FFFFFF;	
+    font-family: "Open Sans";	
+    font-size: 16px;	
+    font-weight: 500;	
+    line-height: 22px;	
+    text-align: center;
+    width: 200px;	
+    border-radius: 100px;	
+    background-color: #f15421;	
+    box-shadow: 0 5px 10px 0 #25252542;
+    float:left !important;
+    margin-top: 20px;
+    margin-right: 200px;
+    }
+#submit:hover{
+    background-color: #e5643a;
+    }
+
+footer  {
+    background: #282828;
+    color: white;
+    font-size: 12px;
+    height: 40px;
+    padding: 60px; 
+    }
+footer p {
+    font-size: 12px;
+    text-align: center;
+    
+    }
