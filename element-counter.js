@@ -20,6 +20,14 @@ function countElements() {
     html += ('</ul>');
     document.getElementById('elements-results').innerHTML = html;
 
+    /* better method
+    html = '';
+    for(var key in tagCount){
+        html += `<li>${key} ${tagCount[key]}</li>`;
+    };
+    document.getElementById('elements-results').innerHTML = `<ul> ${html} </ul>`;
+    */
+
     return false;
 }
 
