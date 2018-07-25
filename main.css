@@ -6,12 +6,16 @@ header {
 
 h1 {
     margin: 0.4em 0.1em 0.1em;
+    text-shadow: 5px 5px 15px midnightblue;
+    color: silver;
 }
 
 h2 {
     margin: 1em;
     font-size: 4em;
     text-align: center;
+    text-shadow: 5px 5px 15px midnightblue;
+    color: lightgrey;
 }
 
 h3.bio {
@@ -34,6 +38,11 @@ p.question {
 
 label {
     color: darkkhaki;
+    cursor: pointer;
+}
+
+fieldset {
+    background: oldlace;
 }
 
 table, th, td {
@@ -44,6 +53,8 @@ table, th, td {
 table {
     margin-left: auto;
     margin-right: auto;
+    background: aliceblue;
+
 }
 
 #icon {
@@ -52,7 +63,24 @@ table {
 }
 
 #me {
-    width: 75%;
+    width: auto;
+    display: block;
+    margin: auto;
+}
+
+#me-block {
+    border: solid;
+    border-color: lightgray;
+}
+
+#bio {
+    background: honeydew;
+}
+
+figcaption {
+    font-weight: bolder;
+    font-family: arial;
+    margin: 0.3em;
 }
 
 button {

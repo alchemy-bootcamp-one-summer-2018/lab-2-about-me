@@ -11,14 +11,13 @@
 <body>
     <header>
         <h1>Jack's Page</h1>
-        <a href="http://github.com/miloofcroton/"><img id="icon" src="http://www.backgroundsy.com/file/large/home-icon.jpg" alt="home"/></a>
+        <a href="http://github.com/miloofcroton/"><img id="icon" src="http://www.clker.com/cliparts/Q/7/J/K/1/d/house-grey.svg" alt="home"/></a>
     </header>
 
     <h2>About Me</h2>
 
     <div class="row">
-        <div class="column">
-            <h3 class="bio">Bio</h3>
+        <div id= "bio" class="column" >
             <p class="bio">
                 I was raised by wolves.
             </p>
@@ -45,13 +44,11 @@
             </table>
         </div>
 
-        <div class="column">
+        <div id="me-block" class="column">
             <img id="me" src="https://avatars1.githubusercontent.com/u/11794494?s=460&v=4" alt="me"/>
+            <figcaption>My cousin and I found this in Middle of Nowhere, New Hampshire</figcaption>
         </div>
     </div>
-
-
-
 
 
     <hr />
@@ -72,48 +69,65 @@
                     <fieldset>
                         <legend>"Deep" questions, with Jack Handy</legend>
                         <p class="question">What is my favorite sea animal?</p>
-                        <input class="text" type="text" name="sea-animal" placeholder="One hint... It uses chromatophores to change color" required/>
+                        <input class="text" type="text" name="seaAnimal" placeholder="Hint... It uses chromatophores to change color!" required/>
                     </fieldset>
 
                     <fieldset>
                         <legend>Pets</legend>
                         <p class="question">Check all the pets that I've had.</p>
-                        <label for="dog">Dog</label>
-                        <input type="checkbox" name="pets" value="dog"/>
-                        <label for="cat">Cat</label>
-                        <input type="checkbox" name="pets" value="cat"/>
-                        <label for="fish">Fish</label>
-                        <input type="checkbox" name="pets" value="fish"/>
-                        <label for="hamster">Hamster</label>
-                        <input type="checkbox" name="pets" value="hamster"/>
-                        <label for="snake">Snake</label>
-                        <input type="checkbox" name="pets" value="snake"/>
-                        <label for="iguana">Iguana</label>
-                        <input type="checkbox" name="pets" value="iguana"/>
-                        <label for="tarantula">Tarantula</label>
-                        <input type="checkbox" name="pets" value="tarantula"/>
-                    </fieldset>
 
+                        <label for="dog">
+                            <input type="checkbox" name="pets" value="dog"/>
+                            Dog
+                        </label>
+                        <label for="cat">
+                            <input type="checkbox" name="pets" value="cat"/>
+                            Cat
+                        </label>
+                        <label for="fish">
+                            <input type="checkbox" name="pets" value="fish"/>
+                            Fish
+                        </label>
+                        <label for="snake">
+                            <input type="checkbox" name="pets" value="snake"/>
+                            Snake
+                        </label>
+                        <label for="tarantula">
+                            <input type="checkbox" name="pets" value="tarantula"/>
+                            Tarantula
+                        </label>
+                    </fieldset>
 
                     <fieldset>
                         <legend>Music</legend>
                         <p class="question">Black Sabbath or AC/DC?</p>
-                        <label for="sabbath">Black Sabbath</label>
-                        <input type="radio" name="classic-rock" value="sabbath" required/>
-                        <label for="acdc">AC/DC</label>
-                        <input type="radio" name="classic-rock" value="acdc" required/>
+                        <label for="sabbath">
+                            <input type="radio" name="classicRock" value="sabbath" required/>
+                            Black Sabbath
+                        </label>
+                        <br />
+                        <label for="acdc">
+                            <input type="radio" name="classicRock" value="acdc" required/>
+                            AC/DC
+                        </label>
 
                         <p class="question">Black Flag or Rollins Band?</p>
-                        <label for="black-flag">Black Flag</label>
-                        <input type="radio" name="hardcore" value="black-flag" required/>
-                        <label for="rollins-band">Rollins Band</label>
-                        <input type="radio" name="hardcore" value="rollins-band" required/>
+                        <label for="black-flag">
+                            <input type="radio" name="hardcore" value="black-flag" required/>
+                            Black Flag
+                        </label>
+                        <br />
+                        <label for="rollins-band">
+                            <input type="radio" name="hardcore" value="rollins-band" required/>
+                            Rollins Band
+                        </label>
+
                     </fieldset>
 
                     <fieldset>
                         <legend>Books</legend>
                         <p class="question">Which book did I read in high school and love?</p>
-                        <select>
+                        <select name="book">
                             <option value="catcher">The Catcher in the Rye</option>
                             <option value="frankenstein">Frankenstein</option>
                             <option value="atlas">Atlas Shrugged</option>

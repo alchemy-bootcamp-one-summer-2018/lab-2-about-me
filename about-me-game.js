@@ -1,54 +1,63 @@
 /* exported checkAboutMeAnswers, resetAboutMeAnswers */
 
 
-var aboutElements = {
+var aboutInterface = {
     form: document.getElementById('about-me-form'),
     submit: document.getElementById('about-me-submit'),
     reset: document.getElementById('about-me-reset'),
     results: document.getElementById('about-me-results'),
 };
 
+
+
 var score = 0;
 
 function checkAboutMeAnswers() {
-    console.log('checkAboutMeAnswers called');
-    console.dir(form);
 
-    var elements = form.elements;
+    var elements = aboutInterface.form.elements;
 
-/*
-    for element in elements
-        var answers += element: elements.element.value
-*/
-
-    var questions = ['inventor', 'runInBrowser']
-
-/*
-    // for element in questions
-    //     console.log(question[0], form.elements.questions[0]  )     // change control flow
-*/
-
-    var answers = {
-        inventor: "Eich",
-        runInBrowser: "yes"
+    var answerInput = {
+        seaAnimal: elements.seaAnimal.value.toLowerCase(),
+        pets: elements.pets.value,
+        classicRock: elements.classicRock.value,
+        hardcore: elements.hardcore.value,
+        book: elements.book.value,
     };
 
-/*
-    for key in answers
-        if key.toLowerCase() === value
-        score += 1
-*/
+    var answerKey = {
+        seaAnimal: 'octopus',
+        pets: 'pets=dog&pets=fish&pets=snake',
+        classicRock: 'sabbath',
+        hardcore: 'rollins-band',
+        book: 'huckleberry'
+    };
 
-    results.innerText = `You got ${score} correct!`;
-    submit.disabled = true;
-    reset.disabled = false;
+
+    console.log('checkAboutMeAnswers called');
+    console.dir(aboutInterface.form);
+
+
+    console.log('answerInput', answerInput);
+    console.log('answerKey', answerKey);
+
+    for each (key in answerInput){
+        if(answerInput.key === answerKey.key) {
+            score += 1;
+        }
+    }
+
+
+
+    aboutInterface.results.innerText = `You got ${score} correct!`;
+    aboutInterface.submit.disabled = true;
+    aboutInterface.reset.disabled = false;
 
     return false;
 }
 
 
 function resetAboutMeAnswers(){
-    results.innerText = '';
-    submit.disabled = false
-    reset.disabled = true
+    aboutInterface.results.innerText = '';
+    aboutInterface.submit.disabled = false;
+    aboutInterface.reset.disabled = true;
 }
