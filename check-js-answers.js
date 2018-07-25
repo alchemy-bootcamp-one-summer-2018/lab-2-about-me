@@ -1,5 +1,5 @@
 
-/*Exported checkJSAnswers, resetJSAnswers*/
+/* Exported resetJSAnswers, checkJSAnswers */
 
 var factForm = document.getElementById('fact-form');
 var factSubmit = document.getElementById('js-submit');
@@ -8,7 +8,7 @@ var factReset = document.getElementById('js-reset');
 
 
 function checkJSAnswers() {
-    console.log ('checkJSAnswers called')
+    console.log ('checkJSAnswers called');
     var elements = factForm.elements;
     var school = elements.school.value;
     var mtv = elements.mtv.value;
@@ -41,7 +41,7 @@ function checkJSAnswers() {
     }
 
     factResult.innerText = 'HIGH-FIVE!!! You got ' + correct + ' out of 5 right!';
-    factSubmit.disabled = true; 
+    factSubmit.disabled = true;
     factReset.disabled = false;
 
     return false;
