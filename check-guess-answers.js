@@ -8,7 +8,6 @@ var guessReset = document.getElementById('guess-reset');
 
 // track "state" _across_ calls to checkGuessAnswer
 var totalGuesses = 0;
-guessReset.disabled = true;
 
 function checkGuessAnswer() {
     var guess = guessForm.elements.number.value;
