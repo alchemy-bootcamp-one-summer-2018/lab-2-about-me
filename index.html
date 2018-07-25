@@ -71,7 +71,8 @@
     <form id="guess-form" onsubmit="return checkGuessAnswer()">
         <p>Guess a number between 1 and 10</p>
         <input name="number" require>
-        <button type="submit">Guess</button>
+        <button id="guess-button" type="submit">Guess</button>
+        <button id="guess-reset" type="reset" disabled>Play Again</button>
 
         <p id="guess-results"></p>
     </form>
