@@ -1,3 +1,14 @@
+h1 {
+    background-color:  rgb(195, 223, 238);
+    color: rgb(158, 156, 156);
+    font-family: 'Sacramento', cursive;
+    font-size: 6em;
+    letter-spacing: 2px;
+    margin-top: 0;
+    text-align: center;
+    padding: .5em 0;
+}
+
 body {
     font-family: 'Lato', sans-serif;
     text-align: center;
@@ -10,25 +21,13 @@ img,
     margin: 0 auto;
 }
 
-h1 {
-    background-color:  rgb(195, 223, 238);
-    color: rgb(167, 166, 166);
-    font-family: 'Sacramento', cursive;
-    font-size: 6em;
-    letter-spacing: 2px;
-    margin-top: 0;
-    text-align: center;
-    padding: .5em 0;
-    width: 100% !important;
-
-}
-
-#bio {
+section {
     background-color: rgb(230, 227, 227);
     padding: 20px;
+    margin-bottom: 80px;
 }
 
-#ewu {
+.last-img {
     padding-bottom: 30px;
 }
 
@@ -43,10 +42,51 @@ p {
     font-size: 1.2em;
 }
 
-#bio p {
+section p {
     padding: 2em 0;
 }
 
 h3 {
     font-size: 1.5em;
+}
+
+h4 {
+    font-size: 1.3em;
+    margin-top: 1.5em;
+    margin-bottom: .5em;
+}
+
+em {
+    font-weight: bold;
+    font-style: normal;
+}
+
+#game1,
+#game2 {
+    background-color: rgb(195, 223, 238);
+    margin-bottom: 3em;
+}
+
+#game1 h3,
+#game2 h3 {
+    padding: 1em;
+    background-color: rgb(230, 227, 227);
+}
+
+#game1 p,
+#game2 p {
+    padding: 1.5em 1em .75em;
+} 
+
+input {
+    max-width: 70%;
+    margin: 1em;
+}
+
+button {
+    margin-top: 1.5em;
+}
+
+.results {
+    padding-bottom: 1.5em;
 }
