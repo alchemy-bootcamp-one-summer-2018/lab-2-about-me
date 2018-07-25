@@ -1,7 +1,6 @@
 /* exported checkJSAnswers, resetJSAnswers, showVal */
 
-// Reference all the elements (by id) that we are going
-// to need to use in our functions
+// Reference all the elements (by id)
 var factForm = document.getElementById('facts-form');
 var factResults = document.getElementById('js-results');
 var factSubmit = document.getElementById('js-submit');
@@ -13,8 +12,7 @@ function showVal(newVal){
     rangeDisplay.innerHTML = newVal;
 }
 
-// function that will run when "submit" event happens on
-// form (because we put onsubmit="return checkJSAnswers()")
+// function that will run on "submit"
 function checkJSAnswers() {
 
     // PART 1 - GET THE VALUES
@@ -27,7 +25,7 @@ function checkJSAnswers() {
     var heartOfGold = elements.heartOfGold.value;
     var hanSolo = elements.hanSolo.value;
 
-    // inspecting those value to make sure we got it
+    // inspecting values
     console.log('myName', myName);
     console.log('thatsImpossible', thatsImpossible);
     console.log('noWay', noWay);
@@ -68,7 +66,7 @@ function checkJSAnswers() {
     }
     // PART 3 - Report results to the user
 
-    // inner text for freeform text response
+    // inner text for text response
     factResults.innerText = 'You got ' + correct + ' out of 5 right. Feel free to try again!';
     factResults.style.backgroundColor = 'blue';
     factResults.style.color = 'white';
@@ -77,8 +75,7 @@ function checkJSAnswers() {
     return false;
 }
 
-// function that will run when a reset event happens on the form
-// via onreset="resetJSAnswers()"
+// function that will run when a reset event
 function resetJSAnswers() {
     factResults.innerText = '';
     factSubmit.disabled = false;

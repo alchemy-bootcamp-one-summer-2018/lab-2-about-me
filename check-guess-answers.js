@@ -9,6 +9,7 @@ var guessReset = document.getElementById('guess-reset');
 // track "state" _across_ calls to checkGuessAnswer
 var totalGuesses = 0;
 
+//function to check guess event on submit
 function checkGuessAnswer() {
     var guess = guessForm.elements.number.value;
     
@@ -46,7 +47,7 @@ function checkGuessAnswer() {
 
     return false;
 }
-
+//function to reset
 function setGameOver() {
     guessResults.innerText = '';
     guessSubmit.disabled = false;
