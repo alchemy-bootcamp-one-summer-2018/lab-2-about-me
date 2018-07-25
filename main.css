@@ -14,11 +14,13 @@ h1 {
 }
 
 h2 {
-    padding: 1em;
+    padding: 2em;
+    margin: 0px;
     font-size: 4em;
     text-align: center;
     text-shadow: 5px 5px 15px maroon;
     color: lightgrey;
+    background-color: lavender;
 }
 
 h2.top {

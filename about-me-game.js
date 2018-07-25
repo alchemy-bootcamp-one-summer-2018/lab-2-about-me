@@ -32,33 +32,10 @@ function checkAboutMeAnswers() {
 
     console.log('checkAboutMeAnswers called');
     console.dir(aboutInterface.form);
-
-
     console.log('answerInput', answerInput);
     console.log('answerKey', answerKey);
 
     var score = 0;
-
-    // fix the following for loop
-
-/*
-    function(object1, object2){
-        for (var key in object){
-            if object1.key === object2.key
-                score += 1;
-
-        }
-    }
-
-    for(var key in answerInput){
-        for(var key in answerKey){
-            if answerInput.key === answerKey.key{
-                score += 1;
-            }
-        }
-    }
-*/
-
 
     for(var key in answerInput){
         if((answerInput.hasOwnProperty(key)) &&
@@ -73,7 +50,6 @@ function checkAboutMeAnswers() {
 
     return false;
 }
-
 
 function resetAboutMeAnswers(){
     aboutInterface.results.innerText = '';

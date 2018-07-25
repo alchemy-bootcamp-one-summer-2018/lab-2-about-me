@@ -13,7 +13,6 @@ function checkRiddleAnswer() {
     console.log(guess);
 
     if(guess === 'blowing in the wind') {
-        // let them know that they won
         riddleInterface.results.innerText = 'You are a man of good taste';
         console.log('they riddled correctly!');
     }
