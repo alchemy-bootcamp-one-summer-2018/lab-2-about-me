@@ -31,7 +31,6 @@ function checkAboutMeAnswers(){
         console.log('age correct');
         correct = correct + 1;
     }
-    // eslint-disable-next-line
     if(collegePlace.toLowerCase() === 'ucsb' || collegePlace.toLowerCase() === 'santa barbara'){
         console.log('college correct');
         correct = correct + 1;

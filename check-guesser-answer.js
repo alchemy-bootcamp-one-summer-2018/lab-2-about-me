@@ -1,4 +1,4 @@
-
+/*export checkGuesserAnswer */
 
 var guessForm = document.getElementById('guess-form');
 var guesserResults = document.getElementById('guesser-results');
@@ -15,6 +15,7 @@ function checkGuesserAnswer() {
         guesserResults.innerText = 'Nope, try again'
         numOfGuesses = numOfGuesses + 1;
         console.log(numOfGuesses);
+        guessForm = '';
     }
 return false;
 }
