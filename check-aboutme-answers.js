@@ -1,5 +1,5 @@
-/* export checkAboutMeAnswers */
-/* export resetAboutMeAnswers */
+/* exported checkAboutMeAnswers , resetAboutMeAnswers */
+
 
 var factForm = document.getElementById('facts-form');
 var aboutMeResults = document.getElementById('aboutMe-results');
@@ -27,7 +27,7 @@ function checkAboutMeAnswers(){
         console.log('town');
         correct = correct + 1;
     }
-    if(glassesAge == 10 || glassesAge.toLowerCase() === 'ten') {
+    if(glassesAge === 10 || glassesAge.toLowerCase() === 'ten') {
         console.log('age correct');
         correct = correct + 1;
     }
@@ -41,7 +41,7 @@ function checkAboutMeAnswers(){
     }
     if(career === 'coffee'){
         console.log('career correct');
-        correct = correct +1;
+        correct = correct + 1;
     }
     if(correct >= 3){
         aboutMeSubmit.innerText = 'You got ' + correct + ' out of 5! Great job, you know me well.';
@@ -58,7 +58,7 @@ function checkAboutMeAnswers(){
 
 function resetAboutMeAnswers(){
     aboutMeResults.innerText = '';
-    aboutMeSubmit.innerText = 'How did I do?'
+    aboutMeSubmit.innerText = 'How did I do?';
     aboutMeSubmit.disabled = false;
     aboutMeReset.disabled = true;
 }
