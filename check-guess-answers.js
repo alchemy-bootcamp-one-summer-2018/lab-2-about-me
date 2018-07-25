@@ -8,25 +8,27 @@ var guessReset = document.getElementById('guess-reset');
 
 // track "state" _across_ calls to checkGuessAnswer
 var totalGuesses = 0;
+guessReset.disabled = true;
 
 function checkGuessAnswer() {
     var guess = guessForm.elements.number.value;
-
+    
     // eslint-disable-next-line
     if(guess == 4) {
         console.log('correct');
         guessResults.innerText = 'Wow, you\'re so smart you will make an excellent spaceship captain';
         guessResults.style.backgroundColor = 'green';
+        guessSubmit.disabled = true;
+        guessReset.disabled = false;
     }
     else if(totalGuesses === 5) {
         console.log('no more guesses');
-        guessResults.innerText = 'GAME OVER!';
+        guessResults.innerText = 'GAME OVER!, you will never be a glorious spaceship captain!';
         guessResults.style.backgroundColor = 'red';
         guessSubmit.disabled = true;
         guessReset.disabled = false;
     }
     else {
-        guessResults.innerText = 'Wrong, you will never be a glorious spaceship captain!';
         guessResults.style.backgroundColor = 'red';
         if(guess < 4) {
             console.log('too low');
