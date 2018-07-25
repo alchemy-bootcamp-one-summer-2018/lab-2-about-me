@@ -9,108 +9,163 @@
 </head>
 
 <body>
-    <h1>Jack's Page</h1>
+    <header>
+        <h1>Jack's Page</h1>
+        <a href="http://github.com/miloofcroton/"><img id="icon" src="http://www.backgroundsy.com/file/large/home-icon.jpg" alt="home"/></a>
+    </header>
 
-    <h2>Bio</h2>
-        <p>
-            I was raised by wolves.
-        </p>
+    <h2>About Me</h2>
+
+    <div class="row">
+        <div class="column">
+            <h3 class="bio">Bio</h3>
+            <p class="bio">
+                I was raised by wolves.
+            </p>
+        </div>
+
+        <div class="column">
+            <table>
+                <tr>
+                    <th>asdf</th>
+                    <th>asdf</th>
+                    <th>asdf</th>
+                </tr>
+                <tr>
+                    <td>def</td>
+                    <td>def</td>
+                    <td>def</td>
+                </tr>
+                <tr>
+                    <td>xyz</td>
+                    <td>xyz</td>
+                    <td>xyz</td>
+                </tr>
+
+            </table>
+        </div>
+
+        <div class="column">
+            <img id="me" src="https://avatars1.githubusercontent.com/u/11794494?s=460&v=4" alt="me"/>
+        </div>
+    </div>
+
+
+
+
+
+    <hr />
+
     <h2>The Game Zone</h2>
 
-    <form id="about-me-form"
-        onsubmit="return checkAboutMeAnswers()"
-        onreset="return resetAboutMeAnswers()">
 
-        <h3>How well do you know me?</h3>
+    <div class="row">
+        <div class="column">
+            <form id="about-me-form"
+                onsubmit="return checkAboutMeAnswers()"
+                onreset="return resetAboutMeAnswers()">
 
-        <div>
+                <h3 class="game-head">How well do you know me?</h3>
 
-            <fieldset>
-                <legend>"Deep" questions, with Jack Handy</legend>
-                <p class="question">What is my favorite sea animal?</p>
-                <input type="text" name="sea-animal" value="" required/>
-            </fieldset>
+                <div>
 
-            <fieldset>
-                <legend>Pets</legend>
-                <p class="question">Check all the pets that I've had.</p>
-                <label for="dog">Dog</label>
-                <input type="checkbox" name="pets" value="dog"/>
-                <label for="cat">Cat</label>
-                <input type="checkbox" name="pets" value="cat"/>
-                <label for="fish">Fish</label>
-                <input type="checkbox" name="pets" value="fish"/>
-                <label for="hamster">Hamster</label>
-                <input type="checkbox" name="pets" value="hamster"/>
-                <label for="snake">Snake</label>
-                <input type="checkbox" name="pets" value="snake"/>
-                <label for="iguana">Iguana</label>
-                <input type="checkbox" name="pets" value="iguana"/>
-                <label for="tarantula">Tarantula</label>
-                <input type="checkbox" name="pets" value="tarantula"/>
-            </fieldset>
+                    <fieldset>
+                        <legend>"Deep" questions, with Jack Handy</legend>
+                        <p class="question">What is my favorite sea animal?</p>
+                        <input class="text" type="text" name="sea-animal" placeholder="One hint... It uses chromatophores to change color" required/>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Pets</legend>
+                        <p class="question">Check all the pets that I've had.</p>
+                        <label for="dog">Dog</label>
+                        <input type="checkbox" name="pets" value="dog"/>
+                        <label for="cat">Cat</label>
+                        <input type="checkbox" name="pets" value="cat"/>
+                        <label for="fish">Fish</label>
+                        <input type="checkbox" name="pets" value="fish"/>
+                        <label for="hamster">Hamster</label>
+                        <input type="checkbox" name="pets" value="hamster"/>
+                        <label for="snake">Snake</label>
+                        <input type="checkbox" name="pets" value="snake"/>
+                        <label for="iguana">Iguana</label>
+                        <input type="checkbox" name="pets" value="iguana"/>
+                        <label for="tarantula">Tarantula</label>
+                        <input type="checkbox" name="pets" value="tarantula"/>
+                    </fieldset>
 
 
-            <fieldset>
-                <legend>Music</legend>
-                <p class="question">Black Sabbath or AC/DC?</p>
-                <label for="sabbath">Black Sabbath</label>
-                <input type="radio" name="classic-rock" value="sabbath" required/>
-                <label for="acdc">AC/DC</label>
-                <input type="radio" name="classic-rock" value="acdc" required/>
+                    <fieldset>
+                        <legend>Music</legend>
+                        <p class="question">Black Sabbath or AC/DC?</p>
+                        <label for="sabbath">Black Sabbath</label>
+                        <input type="radio" name="classic-rock" value="sabbath" required/>
+                        <label for="acdc">AC/DC</label>
+                        <input type="radio" name="classic-rock" value="acdc" required/>
 
-                <p class="question">Black Flag or Rollins Band?</p>
-                <label for="black-flag">Black Flag</label>
-                <input type="radio" name="hardcore" value="black-flag" required/>
-                <label for="rollins-band">Rollins Band</label>
-                <input type="radio" name="hardcore" value="rollins-band" required/>
-            </fieldset>
+                        <p class="question">Black Flag or Rollins Band?</p>
+                        <label for="black-flag">Black Flag</label>
+                        <input type="radio" name="hardcore" value="black-flag" required/>
+                        <label for="rollins-band">Rollins Band</label>
+                        <input type="radio" name="hardcore" value="rollins-band" required/>
+                    </fieldset>
 
-            <fieldset>
-                <legend>Books</legend>
-                <p class="question">Which book did I read in high school and love?</p>
-                <select>
-                    <option value="catcher">The Catcher in the Rye</option>
-                    <option value="frankenstein">Frankenstein</option>
-                    <option value="atlas">Atlas Shrugged</option>
-                    <option value="huckleberry">The Adventures of Huckleberry Finn</option>
-                </select>
-            </fieldset>
+                    <fieldset>
+                        <legend>Books</legend>
+                        <p class="question">Which book did I read in high school and love?</p>
+                        <select>
+                            <option value="catcher">The Catcher in the Rye</option>
+                            <option value="frankenstein">Frankenstein</option>
+                            <option value="atlas">Atlas Shrugged</option>
+                            <option value="huckleberry">The Adventures of Huckleberry Finn</option>
+                        </select>
+                    </fieldset>
+
+                </div>
+
+                <div>
+                    <button id="about-me-submit" type="submit">Check Answers</button>
+                    <button id="about-me-reset" type="reset">Play Again</button>
+                </div>
+
+                <p id="about-me-results">TEST</p>
+
+            </form>
 
         </div>
+        <div class="column">
+            <h3 class="game-head">How good are you at guessing?</h3>
 
-        <div>
-            <button id="js-submit" type="submit">Check Answers</button>
-            <button id="js-reset" type="reset">Play Again</button>
+            <form id="jersey-form"
+                onsubmit="return checkJerseyAnswer">
+                <fieldset>
+                    <legend>Sports</legend>
+                    <p class="question">What was my number when I played football?</p>
+                    <input name="jersey" require />
+                    <button type="submit" name="jersey">Guess</button>
+                </fieldset>
+            </form>
         </div>
+        <div class="column">
+            <h3 class="game-head">How good are you at riddling?</h3>
+
+            <form id="riddle-form"
+                onsubmit="return checkRiddleAnswer">
+                <fieldset>
+                    <legend>Riddle me timbers</legend>
+                    <p class="question">How many codes must a man write down before you call him a man?</p>
+                    <input name="riddle" require />
+                    <button type="submit" name="riddle">Guess</button>
+                </fieldset>
+            </form>
+        </div>
+    </div>
 
 
-    </form>
 
 
-    <h3>How good are you at guessing?</h3>
 
-    <form id="jersey-form"
-        onsubmit="return checkJerseyAnswer">
-        <fieldset>
-            <legend>Sports</legend>
-            <p class="question">What was my number when I played football?</p>
-            <input name="jersey" require />
-            <button type="submit" name="jersey">Guess</button>
-        </fieldset>
-    </form>
 
-    <h3>How good are you at riddling?</h3>
-
-    <form id="riddle-form"
-        onsubmit="return checkRiddleAnswer">
-        <fieldset>
-            <legend>Riddle me timbers</legend>
-            <p class="question">How many codes must a man write down before you call him a man?</p>
-            <input name="riddle" require />
-            <button type="submit" name="riddle">Guess</button>
-        </fieldset>
-    </form>
 
     <script src="about-me-game.js"></script>
     <script src="guess-game.js"></script>

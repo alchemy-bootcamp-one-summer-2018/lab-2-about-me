@@ -1,25 +1,17 @@
 /* exported checkAboutMeAnswers, resetAboutMeAnswers */
 
 
-var form = document.getElementById('facts-form');
-var results = document.getElementById('js-results');
-var submit = document.getElementById('js-submit');
-var reset = document.getElementById('js-reset');
-
-/*
-formElemets = {
-    form: document.getElementById('facts-form');
-
-}
-*/
-
-// if I use a hash instead, be share to change the references to hash values instead of variables
-
+var aboutElements = {
+    form: document.getElementById('about-me-form'),
+    submit: document.getElementById('about-me-submit'),
+    reset: document.getElementById('about-me-reset'),
+    results: document.getElementById('about-me-results'),
+};
 
 var score = 0;
 
 function checkAboutMeAnswers() {
-    console.log('checkJSAnswers called');
+    console.log('checkAboutMeAnswers called');
     console.dir(form);
 
     var elements = form.elements;

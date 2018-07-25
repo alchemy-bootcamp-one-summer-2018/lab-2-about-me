@@ -1,5 +1,25 @@
+header {
+    display: block;
+    text-align: center;
+    font-size: 5em;
+}
 
-h3 {
+h1 {
+    margin: 0.4em 0.1em 0.1em;
+}
+
+h2 {
+    margin: 1em;
+    font-size: 4em;
+    text-align: center;
+}
+
+h3.bio {
+    margin-left: 1em;
+    font-size: 2.5em;
+}
+
+h3.game-head {
     color: darkred;
 }
 
@@ -14,4 +34,58 @@ p.question {
 
 label {
     color: darkkhaki;
+}
+
+table, th, td {
+    border: 0.1em solid black;
+    padding: 3em;
+}
+
+table {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#icon {
+    width: 5%;
+    margin: 0.1em;
+}
+
+#me {
+    width: 75%;
+}
+
+button {
+    font-size: 0.75em;
+    padding: 0.5em;
+    background-color: dimgray;
+    color: gainsboro;
+}
+
+.row {
+    display: flex;
+}
+
+.column {
+    flex: 50%;
+}
+
+.column p.bio {
+    margin: 5em 2em;
+}
+
+input.text {
+    width: 30em;
+}
+
+#about-me-results {
+    background: red;
+    background: -webkit-linear-gradient(left, orange , yellow, green, cyan, blue, violet);
+    background: -o-linear-gradient(right, orange, yellow, green, cyan, blue, violet);
+    background: -moz-linear-gradient(right, orange, yellow, green, cyan, blue, violet);
+    background: linear-gradient(to right, orange , yellow, green, cyan, blue, violet);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 10em;
+    margin: 0.1em;
 }
