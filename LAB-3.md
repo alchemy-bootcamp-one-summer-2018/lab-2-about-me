@@ -41,9 +41,11 @@ and prevents the form from changing the page
     ```
 1. Create an empty object variable `tagCount` to which you can add properties
 1. Loop the `tags` and for each one:
+    1. Get the value of the checkbox by calling `tags[i].value` and
+    store in a `tag` variable
     1. Call `document.querySelectorAll(tag)` and store the length in a new
     property whose key is the tag name
-1. Console log `tags` and check that the value is correct
+1. Console log `tagCount` and check that the value is correct
 1. Create a variable `html` whose value is: `<ul>`
 1. Loop the `tags` again, and this time for each tag:
     1. Get the count property value off `tags` using the tag name
