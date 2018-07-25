@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lab 2</title>
-    <link rel="stylesheet" href="main.css" />
+    <link rel="stylesheet" type="text/css" href="main.css" />
 </head>
 
 <body>
@@ -202,17 +202,51 @@
 
         </div>
     </div>
+    
+    <hr />
+        
+    <h2>New Lab!</h2>
 
+    <div class="row">
+        <div class="column">
+            <h3 class="game-head">I'm feeling good about this lab...</h3>
+    
+            <form id="element-counter" 
+                onsubmit="return countElements()">
+                <fieldset>
+                    <legend>Elements</legend>
+                    <p class="question">Check all the elements.</p>
+                    
+                    <label for="p">
+                        <input id="p" type="checkbox" name="elements" value="p" /> p <br>
+                    </label>
+                    <label for="input">
+                        <input id="input" type="checkbox" name="elements" value="input" /> input <br>
+                    </label>
+                    <label for="img">
+                        <input id="img" type="checkbox" name="elements" value="img" /> img <br>
+                    </label>
+                    <label for="form">
+                        <input id="form" type="checkbox" name="elements" value="form" /> form <br>
+                    </label>
+                    <label for="div">
+                        <input id="div" type="checkbox" name="elements" value="div" /> div <br>
+                    </label>
+                </fieldset>
+                
+                <button type="submit">Count</button>
 
-
-
-
+                <p id="elements-results" class="results-tracker"></p>
+            </form>
+        
+        </div>
+    </div>
 
 
     <script src="about-me-game.js"></script>
     <script src="guess-game.js"></script>
     <script src="riddle-game.js"></script>
-
+    <script src="element-counter.js"></script>
 </body>
 
 </html>
