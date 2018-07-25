@@ -7,6 +7,13 @@ var finalScore = document.getElementById('about-me-score');
 var aboutMeSubmit = document.getElementById('about-me-submit');
 var aboutMeReset = document.getElementById('about-me-reset');
 
+// Getting elements for results display
+var q1Results = document.getElementById('question1-results');
+var q2Results = document.getElementById('question2-results');
+var q3Results = document.getElementById('question3-results');
+var q4Results = document.getElementById('question4-results');
+var q5Results = document.getElementById('question5-results');
+
 function checkAboutMe() {
 
     // Check to make sure the script is successfully connected to index.html
@@ -17,13 +24,6 @@ function checkAboutMe() {
     // Getting info from About Me form
     var aboutMe = document.getElementById('about-me');
     console.log('aboutMe: ', aboutMe);
-
-    // Getting elements for results display
-    var q1Results = document.getElementById('question1-results');
-    var q2Results = document.getElementById('question2-results');
-    var q3Results = document.getElementById('question3-results');
-    var q4Results = document.getElementById('question4-results');
-    var q5Results = document.getElementById('question5-results');
 
     // PART I: Get the value of the user input for each question
 
@@ -135,6 +135,11 @@ function checkAboutMe() {
 function resetAboutMe() {
     // resets results and button properties to original settings
     finalScore.innerText = '';
+    q1Results.innerText = '';
+    q2Results.innerText = '';
+    q3Results.innerText = '';
+    q4Results.innerText = '';
+    q5Results.innerText = '';
     aboutMeSubmit.disabled = false;
     aboutMeReset.disabled = true;
 }
