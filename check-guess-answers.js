@@ -7,7 +7,7 @@ var totalGuesses = 0;
 
 function checkGuessAnswer() {
     var guess = guessForm.elements.florida.value;
-    if (guess == 4) {
+    if(guess == 4) {
         guessResults.innerText = 'Congrats! You got it correct!';
     }
     else {

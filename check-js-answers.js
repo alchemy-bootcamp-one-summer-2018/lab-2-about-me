@@ -22,24 +22,24 @@ function checkJSAnswers() {
 
     var correct = 0;
 
-    if (vegetable.toLowerCase() === 'yes') {
+    if(vegetable.toLowerCase() === 'yes') {
         correct = correct + 1;
     }
 
-    if (misdemeanors.toLowerCase() === 'yes') {
+    if(misdemeanors.toLowerCase() === 'yes') {
         correct = correct + 1;
     }
 
-    if (sister.toLowerCase() === 'yes') {
+    if(sister.toLowerCase() === 'yes') {
         correct = correct + 1;
     }
 
-    if (moon.toLowerCase() === '286 million') {
+    if(moon.toLowerCase() === '286 million') {
         correct = correct + 1;
     }
 
-    if (tall.toLowerCase() === 'yes') {
-        correct = correct +1;
+    if(tall.toLowerCase() === 'yes') {
+        correct = correct + 1;
     }
 
 
@@ -50,7 +50,7 @@ function checkJSAnswers() {
     function resetJSAnswers() {
         factsResults.innerText = '';
         factsSubmit.disabled = false;
-        factReset.disabled = true;
+        factsReset.disabled = true;
     }
 
 
