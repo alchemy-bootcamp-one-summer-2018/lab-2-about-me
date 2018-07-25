@@ -71,6 +71,7 @@ function checkJSAnswers() {
     // inner text for freeform text response
     factResults.innerText = 'You got ' + correct + ' out of 5 right. Feel free to try again!';
     factResults.style.backgroundColor = 'blue';
+    factResults.style.color = 'white';
     factSubmit.disabled = true;
     factReset.disabled = false;
     return false;

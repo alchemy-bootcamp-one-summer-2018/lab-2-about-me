@@ -15,8 +15,9 @@ function checkGuessAnswer() {
     // eslint-disable-next-line
     if(guess == 4) {
         console.log('correct');
-        guessResults.innerText = 'Wow, you\'re so smart you will make an excellent spaceship captain';
+        guessResults.innerText = 'Wow, you\'re so smart you will make an excellent spaceship captain!';
         guessResults.style.backgroundColor = 'green';
+        guessResults.style.color = 'white';
         guessSubmit.disabled = true;
         guessReset.disabled = false;
     }
@@ -24,11 +25,13 @@ function checkGuessAnswer() {
         console.log('no more guesses');
         guessResults.innerText = 'GAME OVER!, you will never be a glorious spaceship captain!';
         guessResults.style.backgroundColor = 'red';
+        guessResults.style.color = 'white';
         guessSubmit.disabled = true;
         guessReset.disabled = false;
     }
     else {
         guessResults.style.backgroundColor = 'red';
+        guessResults.style.color = 'white';
         if(guess < 4) {
             console.log('too low');
             guessResults.innerText = 'Last guess was too low!';
