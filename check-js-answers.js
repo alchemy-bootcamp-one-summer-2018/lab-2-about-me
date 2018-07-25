@@ -13,10 +13,14 @@ function checkJSAnswers() {
     var state = elements.state.value;
     var runInBrowser = elements.runInBrowser.value;
     var condiment = elements.condiment.value;
+    var year = elements.year.value;
+    var bennett = elements.bennett.value;
 
     console.log('state', state);
     console.log('runInBrowser', runInBrowser);
     console.log('condiment', condiment);
+    console.log('year', year);
+    console.log('bennett', bennett);
 
     var correct = 0;
     if(state.toLowerCase() === 'massachusetts') {
@@ -28,8 +32,14 @@ function checkJSAnswers() {
     if(condiment.toLowerCase() === 'ranch') {
         correct = correct + 1;
     }
+    if(year.toLowerCase() === 'yes') {
+        correct = correct + 1;
+    }
+    if(bennett.toLowerCase() === 'bennett') {
+        correct = correct + 1;
+    }
 
-    factResults.innerText = 'Congrats! You got ' + correct + ' out of 3 right!';
+    factResults.innerText = 'Congrats! You got ' + correct + ' out of 5 right!';
     factSubmit.disabled = true;
     factReset.disabled = false;
     return false;
