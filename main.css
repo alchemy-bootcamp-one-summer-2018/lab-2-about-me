@@ -6,7 +6,7 @@ header {
 
 h1 {
     margin: 0.4em 0.1em 0.1em;
-    text-shadow: 5px 5px 15px midnightblue;
+    text-shadow: 5px 5px 15px darkolivegreen;
     color: silver;
 }
 
@@ -14,13 +14,22 @@ h2 {
     margin: 1em;
     font-size: 4em;
     text-align: center;
-    text-shadow: 5px 5px 15px midnightblue;
+    text-shadow: 5px 5px 15px maroon;
     color: lightgrey;
 }
 
-h3.bio {
-    margin-left: 1em;
+h2.top {
+    text-shadow: 5px 5px 15px midnightblue;
+}
+
+h3.upper {
+    text-align: center;
     font-size: 2.5em;
+}
+
+div.black {
+    background-color: black;
+    padding: 20px 20px 20px 20px;
 }
 
 h3.game-head {
@@ -47,14 +56,17 @@ fieldset {
 
 table, th, td {
     border: 0.1em solid black;
-    padding: 3em;
 }
 
 table {
     margin-left: auto;
     margin-right: auto;
     background: aliceblue;
+}
 
+td img {
+    width: 240px;
+    height: 240px;
 }
 
 #icon {
@@ -117,4 +129,16 @@ input.text {
     font-size: 5em;
     margin: 0.1em;
     font-weight: bold;
+}
+
+#hof {
+    text-shadow: 5px 5px 15px darkgoldenrod;
+    color: white;
+}
+
+#hof {
+    text-shadow: 5px 5px 15px darkgoldenrod;
+    color: white;
+    background-color: black;
+
 }

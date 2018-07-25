@@ -14,39 +14,52 @@
         <a href="http://github.com/miloofcroton/"><img id="icon" src="http://www.clker.com/cliparts/Q/7/J/K/1/d/house-grey.svg" alt="home"/></a>
     </header>
 
-    <h2>About Me</h2>
+    <h2 class="top">About Me</h2>
 
     <div class="row">
         <div id= "bio" class="column" >
+            <div class="upper">
+                <h3 class="upper">Bio</h3>
+            </div>
             <p class="bio">
                 I was raised by wolves.
+            </p>
+            <p class="bio">
+                Actually, that's not entirely true.
             </p>
         </div>
 
         <div class="column">
+            <div class="upper black">
+                <h3 id="hof" class="upper">My Hall of Fame</h3>
+            </div>
             <table>
                 <tr>
-                    <th>asdf</th>
-                    <th>asdf</th>
-                    <th>asdf</th>
+                    <td><img src="https://www.biography.com/.image/t_share/MTE1ODA0OTcxNzcxOTg3NDY5/theodore-roosevelt-9463424-1-402.jpg" /></td>
+                    <td><img src="http://www.virtuesforlife.com/wp-content/uploads/2012/09/einstein-photo.jpg" /></td>
+                    <td><img src="https://optimizehq.imgix.net/authors/headshots/aristotle.jpg" /></td>
                 </tr>
                 <tr>
-                    <td>def</td>
-                    <td>def</td>
-                    <td>def</td>
+                    <td><img src="https://www.biography.com/.image/ar_1:1%2Cc_fill%2Ccs_srgb%2Cg_face%2Cq_auto:good%2Cw_300/MTE5NDg0MDU1MTUzMTE2Njg3/alan-turing-9512017-1-402.jpg" /></td>
+                    <td><img src="https://pbs.twimg.com/profile_images/725013638411489280/4wx8EcIA.jpg" /></td>
+                    <td><img src="https://i.guim.co.uk/img/media/8db8a9c516b22b50560ff194f3a46ca3c76c8500/0_0_2371_2371/master/2371.jpg?w=300&q=55&auto=format&usm=12&fit=max&s=1961130d78d2a013780d4ee6b9ac9181" /></td>
                 </tr>
                 <tr>
-                    <td>xyz</td>
-                    <td>xyz</td>
-                    <td>xyz</td>
+                    <td><img src="https://hips.hearstapps.com/pop.h-cdn.co/assets/15/14/1024x1024/square-1427814227-richard-feynman.jpg?resize=768:*" /></td>
+                    <td><img src="http://www.athletespeakers.com/upload/images/speakers/5548/267x267_Screen%20shot%202015-03-17%20at%209.21.19%20AM.png" /></td>
+                    <td><img src="https://www.biography.com/.image/t_share/MTIwNjA4NjMzNzIxNzUxMDUy/alexander-the-great-wc-9180468-1-402.jpg" /></td>
                 </tr>
 
             </table>
         </div>
 
         <div id="me-block" class="column">
+            <h3 class="upper">Travelin' Man</h3>
             <img id="me" src="https://avatars1.githubusercontent.com/u/11794494?s=460&v=4" alt="me"/>
-            <figcaption>My cousin and I found this in Middle of Nowhere, New Hampshire</figcaption>
+            <div align="center">
+                <figcaption>My cousin and I found this in Middle of Nowhere, New Hampshire</figcaption>
+            </div>
+
         </div>
     </div>
 
@@ -156,7 +169,7 @@
                 <fieldset>
                     <legend>Sports</legend>
                     <p class="question">What was my number when I played football?</p>
-                    <input name="jersey" require />
+                    <input class="text" type="text" name="jersey" required />
                     <button type="submit" name="jersey">Guess</button>
                 </fieldset>
 

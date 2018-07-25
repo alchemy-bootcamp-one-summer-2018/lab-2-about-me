@@ -10,17 +10,16 @@ var guessAttempts = 0;
 function checkJerseyAnswer() {
     var guess = guessInterface.form.jersey.value;
 
-    console.log(guess);
+    console.log('guess:', guess);
 
     if(guess === 38) {
-        // let them know that they won
         guessInterface.results.innerText = 'Right!';
-        console.log('they guessed correctly!');
+        console.log('You guessed correctly!');
     }
     else {
-        guessInterface.results.innerText = 'Wrong';
+        guessInterface.results.innerText = `Attempt number ${guessAttempts} is wrong... Try again.`;
         guessAttempts += 1;
-        console.log(guessAttempts);
+        console.log('guess attempts:', guessAttempts);
     }
 
     return false;

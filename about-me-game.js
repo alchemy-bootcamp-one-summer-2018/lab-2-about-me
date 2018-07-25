@@ -8,8 +8,6 @@ var aboutInterface = {
     results: document.getElementById('about-me-results'),
 };
 
-var test = [];
-
 function checkAboutMeAnswers() {
 
     var elements = aboutInterface.form.elements;
