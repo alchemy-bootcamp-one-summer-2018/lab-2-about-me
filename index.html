@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <h1>A Little Bit About Alex</h1>    
+
+    <form id="facts-form"
+        onsubmit="return checkAboutMeAnswers()"
+        onreset="return resetAboutMeAnswers()">
+        
+        <div>
+            <label>Where did I grow up?</label>
+            <p><input type="text" name="hometown" required></p>
+        </div>
+
+        <div>
+            <label>At what age did I start wearing glasses?</label>
+            <p><input type="text" name="glassesAge" required></p>
+        </div>
+
+        <div>
+            <label>Where did I briefly go to college?</label>
+            <p><input type="text" name="collegePlace"></p>
+        </div>
+
+        <div>
+            <p>How many siblings do I have?</p>
+            <p>
+                <label>
+                    <input type="radio" name="numOfSibs" value="twoSisOneBro" required>Two sisters and one brother
+                </label>
+                <label>
+                    <input type="radio" name="numOfSibs" value="twoBrosOneSis" required>Two brothers and one sister
+                </label>
+                <label>
+                    <input type="radio" name="numOfSibs" value="oneSis" required>One sister
+                </label>
+                <label>
+                    <input type="radio" name="numOfSibs" value="oneBro" required>One brother
+                </label>                
+            </p>        
+        </div>
+        
+        <div>
+            <label>What was my field before coming to ACL?</label>
+            <select name="career">
+                <option value="taxidermy">Taxidermy</option>
+                <option value="catTherapy">Cat Therapy</option>
+                <option value="coffee">Coffee</option>
+                <option value="underwaterSalvage">Underwater Salvage</option>
+            </select>
+        </div>
+        <div>
+            <p>
+                <button id="aboutMe-submit" type="submit">How did I do?</button>
+                <button id="aboutMe-reset" type="reset">Try again!</button>
+            </p>
+        </div>
+        <div>
+            <p id="aboutMe-results"></p>
+        </div>
+    </form>
+
+    <form id="guess-form" onsubmit="return checkGuesserAnswer()">
+        <div>
+            <p>How many European countries have I visited?</p>
+            <input name = "number" require>
+            <button type="submit">Take a guess!</button>
+    
+            <p id="guesser-results"></p>
+        </div>
+    </form>
+
+    <script src="check-aboutMe-answers.js"></script>
+    <script src="check-guesser-answer.js"></script>
+
+</body>
+</html>
