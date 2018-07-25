@@ -103,5 +103,23 @@
    <button id="GuessAnswers" type="submit"> Submit your guess!</button>
    <button id="PlayAgain" type="reset" disabled>Play Again!</button>
 </form>
+
+<!-- Day 3 form -->
+
+<form onsubmit="return countTags()">
+    <label><input type="checkbox" name="tags" value="p"> p</label>
+    <label><input type="checkbox" name="tags" value="div"> div</label>
+    <label><input type="checkbox" name="tags" value="form"> form</label>
+    <label><input type="checkbox" name="tags" value="button"> button</label>
+    <label><input type="checkbox" name="tags" value="em"> em </label>
+    <label><input type="checkbox" name="tags" value="ul"> ul</label>
+    <label><input type="checkbox" name="tags" value="li"> li</label>
+    
+<div>
+    <button id="count" type="submit"> Count these tags!</button>
+    </div>
+
+</form>
+<script src="elementCount.js"></script>
 </body>
 </html>
