@@ -46,19 +46,9 @@
                     <input type="radio" name="school" 
                     value="yes" required> A school for dyslexia
                  </label>
-            </p>    
-         <button id="js-submit" type="submit">Click to see how you did!</button>
-        <button id="js-reset" type="reset" disabled>Try again</button>
-    
-    </form>
-
-    <p id="js-results"></p>  
-    
- </div>
-    
-    <script src="check-js-answers.js"> </script>
-        
-        <!-- <p>2. Which MTV "The Dairy Of" episode was I in?</p>
+            </p>   
+           
+         <p>2. Which MTV "The Dairy Of" episode was I in?</p>
             <p>
                 <label>
                    <input type="radio" name="mtv" 
@@ -109,49 +99,47 @@
         <p>5.When I was pregnant with both my boys my favorite smell was?</p>
             <p>
                 <label>
-                     <input type="radio" name="career" 
+                     <input type="radio" name="smell" 
                     value="no" required>  Roses
                 </label>
                 <label>
-                    <input type="radio" name="career" 
+                    <input type="radio" name="smell" 
                     value="yes" required> K-mart
                 </label>
                 <label>
-                    <input type="radio" name="career" 
+                    <input type="radio" name="smell" 
                     value="no" required> Someone else making me dinner
                 </label>
-            </p> -->
+            </p> 
 
-        
+         <button id="js-submit" type="submit">Click to see how you did!</button>
+        <button id="js-reset" type="reset" disabled>Try again</button>
+    
+    
+    </form>
+
+    <p id="js-results"></p>  
+    
+ </div>
 
 
+  <div class="game-two"> 
+        
+    <h2>Game Two | Fill in the blanks</h2>
+    <p>Guess the right answer:</p>
 
+    <form id="guess-form" onsubmit="return checkGuessAnswer()">
+        <p>1. The animal I get most excited to see at the zoo is an</p>
+        <input name="otter" require>
+        <button type="submit">Guess</button>
 
+        <p id="guess-result"></p>
         
-            <!-- <h2>Game Two | Fill in the blanks<h2>
+    </form>
+
+    <script src="check-js-guess.js"> </script>
+    <script src="check-js-answers.js"> </script>
         
-        1. The animal I get most excited to see at the zoo is
-           
-            a. an otter
-        
-        
-        2. My favorite color is 
-           
-            a. pink
-        
-        
-        3. What am I most afraid of?
-           
-            a. not making my sons proud 
-        
-        4. My time of day is? 
-           
-            a. the morning 
-        
-        
-        5. On a scale from 1 to 10 how fun was this? 
-           
-            a. Any answer -->
             
 </body>
 </html>

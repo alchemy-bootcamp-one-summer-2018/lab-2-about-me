@@ -1,5 +1,5 @@
 
-
+/*Exported checkJSAnswers, resetJSAnswers*/
 
 var factForm = document.getElementById("fact-form");
 var factSubmit = document.getElementById("js-submit");
@@ -25,7 +25,7 @@ console.log ('checkJSAnswers called')
     correct = correct + 1;
     }   
 
-    if (mtv || state || career === 'yes') {
+    if (school || mtv || state || career === 'yes') {
         correct = correct + 1;
         }   
 
