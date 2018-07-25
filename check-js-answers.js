@@ -1,4 +1,4 @@
-/* exported checkJSAnswers, resetJSAnswers */
+/* exported resetJSAnswers checkJSAnswers */
 
 var factsForm = document.getElementById('facts-form');
 var factsSubmit = document.getElementById('js-submit');
@@ -47,13 +47,11 @@ function checkJSAnswers() {
     factsSubmit.disabled = true;
     factsReset.disabled = false;
 
-    function resetJSAnswers() {
-        factsResults.innerText = '';
-        factsSubmit.disabled = false;
-        factsReset.disabled = true;
-    }
-
-
     return false;
 
+}
+function resetJSAnswers() {
+    factsResults.innerText = '';
+    factsSubmit.disabled = false;
+    factsReset.disabled = true;
 }
