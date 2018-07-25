@@ -4,10 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>About Me</title>
 </head>
 <body>
-   <h1> Guessing Game</h1> 
+    
+    <h1>About Me:</h1>
+    <p>Hi! My name is Sophie Graham I was born and raised in Portland! <br>
+        I love dessert, chocolate is my favorite! One of my favorite Portland <br>
+        pastimes is kayaking on the Willamette!</p>
+  
+    <h1> About me Game:</h1> 
    <form id="facts-form"
    onsubmit="return checkJSAnswers()"
    onreset="resetJSAnswers()">
@@ -18,7 +24,7 @@
    <div>
        <p>Do I like dessert?</p>
        <p>
-           <label>
+        <label>
        <input type="radio" name="runInBrowser"
             value="yes" required> Yes
        </label>
@@ -28,6 +34,21 @@
        </label>
        </p>
    </div>
+   <div>
+       <p>What is my favorite thing to do in Portland?</p>
+       <p>
+        <label>
+        <input type="radio" name="hobby" value="Hike" required> Hike Forest Park
+        </label>
+        <label>
+        <input type="radio" name="hobby" value="Kayak" required> Kayak on the Willamette
+        </label>
+        <label>
+        <input type="radio" name="hobby" value="Blazer" required> Go to Blazer games
+        </label>
+        </p>
+   </div>
+   
    <button id="js-submit" type="submit"> Check Answers</button>
    <button id="js-reset" type="reset" disabled>Play Again</button>
   
@@ -35,5 +56,31 @@
    <p id ="js-results"></p>
 </form>
    <script src="checkJSAnswers.js"></script>
+  
+   <h1>Guessing Game:</h1>
+   <form id="guess-form"
+   onsubmit="return checkGuessAnswers()"
+   onreset="resetGuessAnswers()">
+   <div>
+       <label> 1. </label>
+   </div>
+   <div>
+       <label> 2. </label>
+    </div>
+    <div>
+       <label> 3. </label>
+    </div>
+    <div>
+       <label> 4. </label>
+    </div>
+    <div>
+       <label> 5. </label>
+    </div>
+
+   </div>
+  
+   <button id="GuessAnswers" type="submit"> Submit your guess!</button>
+   <button id="GuessAnswers" type="reset" disabled>Play Again!</button>
+  
 </body>
 </html>
