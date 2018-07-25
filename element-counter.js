@@ -25,7 +25,7 @@ function countTags() {
     html += '</ul>';
     var element = document.getElementById('results');
     element.innerHTML = html + 'dont everyone thank me at once!';
-    console.log('element is called');
+    console.log('this works!');
 
     return false;
 }
