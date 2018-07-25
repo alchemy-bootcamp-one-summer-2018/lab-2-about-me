@@ -106,6 +106,24 @@
         </form>
     </section>
 
+    <section class = "game" id = 'game3'>
+        <h1> Tag Exercise </h1>
+        <form id="count_tags" onsubmit="return countTags()">
+            <p> Here are tags:
+                <label> <input type="checkbox" name = "tags" value="p"> p </label> 
+                <label> <input type="checkbox" name = "tags" value="div"> div </label> 
+                <label> <input type="checkbox" name ="tags" value="form"> form  </label> 
+                <label> <input type="checkbox" name = "tags" value="button"> button </label> 
+                <label> <input type="checkbox" name ="tags" value="section"> section </label> 
+                <label> <input type="checkbox" name ="tags" value="article"> article  </label> 
+            </p>
+
+            <button id = "submit3" type="submit"> Calculate tags </button>
+    
+            <p id="tag-results"></p>
+        </form>
+    </section>
+
     <footer>
         <p>Posted by: Lauren Shareshian</p>
         <p>Contact information: <a href="mailto:laurenshareshian@gmail.com">
@@ -114,6 +132,7 @@
 
     <script src="js/check-js-answers.js"></script> 
     <script src="js/check-js-answers-2.js"></script>
+    <script src="js/counttags.js"></script>
 </body>
 
 </html>
