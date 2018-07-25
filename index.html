@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Lab 2</title>
+    <link rel = 'stylesheet' href = 'css/main.css'>
+</head>
+
+<body>
+    <article>
+        <header>
+            <h1>Welcome to Lauren's Page!</h1>
+            <p>Below, you'll be able to read about Lauren and then play guessing games.</p>
+        </header>    
+    </article>
+
+    <nav>
+        <a href="#bio">Lauren's Bio</a> |
+        <a href="#game1">Guessing Game 1</a> |
+        <a href="#game2">Guessing Game 2</a> |
+    </nav>
+
+    <section id = 'bio'>
+        <header>
+            <h1>Lauren's Bio</h1>
+            <h3> Education</h3>
+            <p>Lauren grew up in Hamilton, NJ and attended The Peddie School. She received her Bachelors in math from NYU and her Masters in math from Duke.</p>
+            <h3> Experience</h3>
+            <p> Lauren has worked at Oregon Episcopal School and Catlin Gabel School in Portland, OR for the past nine years. In her quest to weave together math, statistics, and computer science topics, she recently completed a three month data science intensive in Seattle. Currently, she is helping to incorporate Python programming and data science into her school’s math and computer science curriculum.</p>
+            <h3> Personal </h3>
+            <p> Lauren lives with her husband, an old ornery pitbull, and a three legged Australian shepherd. She likes gardening, soccer, and the trashiest reality TV possible.</p>
+        </header>    
+    </section>
+
+    <section id = 'game1'>
+
+        <form class = "game" id = "facts" 
+            onsubmit="return checkAboutMe()"
+            onreset="resetJSAnswers()" >
+            <h1> Guessing Game 1 </h1>
+            <p> 
+                <label>  Where did Lauren get her Masters degree? </label>
+                <select id = 'myschool'>
+                    <option form = "facts" name = "school" value="unc">UNC</option>
+                    <option form = "facts" name = "school" value="duke">Duke</option>
+                    <option form = "facts" name = "school" value="ncstate">NC State</option>
+                    <option form = "facts" name = "school" value="georgetown">Georgetown</option>
+                </select>
+            </p>
+
+            <p> What is Duke's mascot?
+                <label> <input type="radio" name ="mascot" value="blue devil" required> </label> Blue Devil
+                <label> <input type="radio" name ="mascot" value="ram" required> </label> Ram
+                <label> <input type="radio" name ="mascot" value="wolf" required> </label> Wolf
+                <label> <input type="radio" name ="mascot" value="bulldog" required> </label> Bulldog
+            </p>
+            <p> Did Lauren accidentally go on a date with the Duke mascot?
+                <label> <input type="radio" name ="date" value = "Yes - how embarrassing!"> </label> Yes - how embarrassing!
+                <label> <input type="radio" name ="date" value = "Yes - she was a lucky girl."> </label> Yes - she was a lucky girl.
+                <label> <input type="radio" name ="date" value = "No - she missed out on a good time."> </label> No - she missed out on a good time.
+            </p>
+
+            <p> Did Lauren grow up in the worst state ever? (Hint: many answers are possible).
+                <label> <input type="checkbox" id = "state1"> Yes - Jersey is the armpit of the nation!</label> 
+                <label> <input type="checkbox" id ="state2"> No - at least Jersey voted for Clinton. </label> 
+                <label> <input type="checkbox" id ="state3"> No - Florida is the worst. </label> 
+            </p>
+
+            <p> Select Lauren's two dogs from the checkboxes below. <br>
+                <label> <input type="checkbox" id ="dog1"> <img src="images/dog1.jpg" alt="dog1" width = "200"> </label> 
+                <label> <input type="checkbox" id ="dog2"> <img src="images/dog2.jpg" alt="dog2" width = "200"> </label> 
+                <label> <input type="checkbox" id ="dog3"> <img src="images/dog3.jpg" alt="dog3" width = "175"> </label>  
+                <label> <input type="checkbox" id ="dog4"> <img src="images/dog4.jpg" alt="dog4" width = "160"> </label> 
+                <label> <input type="checkbox" id ="dog5"> <img src="images/dog5.jpg" alt="dog5" width = "200"> </label> 
+            </p>
+        
+            <button id = "submit" type="submit"> Check answers </button>
+            <button id = "reset" type="reset" disabled> Play again </button>
+
+            <p id = 'results'></p>
+        </form>
+    </section>
+
+    <section class = "game" id = 'game2'>
+        <h1> Guessing Game 2 </h1>
+        <form id="guess-form" onsubmit="return checkGuessAnswer()" onreset="resetGuessAnswer2()">
+            <p>What is Lauren's favorite reality show? </p>
+                <label> <input type="radio" name = "show" value="My 600 Pound Life"> My 600 Pound Life </label>  
+                <label> <input type="radio" name = "show" value="Real Housewives of Beverly Hills"> Real Housewives of Beverly Hills </label> 
+                <label> <input type="radio" name = "show" value="Real Housewives of NJ"> Real Housewives of NJ </label> 
+                <label> <input type="radio" name = "show" value="Jersey Shore"> Jersey Shore </label> 
+                <br>
+                <label> <input type="radio" name = "show" value="Floribama Shore"> Floribama Shore </label> 
+                <label> <input type="radio" name = "show" value="Vanderpump Rules"> Vanderpump Rules </label> 
+                <label> <input type="radio" name = "show" value="Below Deck"> Below Deck </label> 
+                <label> <input type="radio" name = "show" value="90 Day Fiance"> 90 Day Fiance </label> 
+                <label> <input type="radio" name = "show" value="All of the above"> All of the above </label> 
+            </p>
+
+            <button id = "submit2" type="submit"> Guess </button>
+            <button id = "reset2" type="reset" disabled> Play again </button>
+    
+            <p id="guess-results"></p>
+        </form>
+    </section>
+
+    <footer>
+        <p>Posted by: Lauren Shareshian</p>
+        <p>Contact information: <a href="mailto:laurenshareshian@gmail.com">
+        laurenshareshian@gmail.com</a></p>
+    </footer>
+
+    <script src="js/check-js-answers.js"></script> 
+    <script src="js/check-js-answers-2.js"></script>
+</body>
+
+</html>
+
