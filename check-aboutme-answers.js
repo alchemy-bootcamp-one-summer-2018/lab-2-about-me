@@ -1,3 +1,5 @@
+/* export checkAboutMeAnswers */
+/* export resetAboutMeAnswers */
 
 var factForm = document.getElementById('facts-form');
 var aboutMeResults = document.getElementById('aboutMe-results');
@@ -22,15 +24,16 @@ function checkAboutMeAnswers(){
     var correct = 0;
 
     if(hometown.toLowerCase() === 'la' || hometown.toLowerCase() === 'los angeles') {
-        console.log('way to go');
+        console.log('town');
         correct = correct + 1;
     }
     if(glassesAge == 10 || glassesAge.toLowerCase() === 'ten') {
-        console.log('hey thats right');
+        console.log('age correct');
         correct = correct + 1;
     }
+    // eslint-disable-next-line
     if(collegePlace.toLowerCase() === 'ucsb' || collegePlace.toLowerCase() === 'santa barbara'){
-        console.log('sb was awful');
+        console.log('college correct');
         correct = correct + 1;
     }
     if(numOfSibs === 'oneBro'){
@@ -38,10 +41,25 @@ function checkAboutMeAnswers(){
         correct = correct + 1;
     }
     if(career === 'coffee'){
-        console.log('that was then');
+        console.log('career correct');
         correct = correct +1;
     }
+    if(correct >= 3){
+        aboutMeSubmit.innerText = 'You got ' + correct + ' out of 5! Great job, you know me well.';
+    }
+    if(correct < 3){
+        aboutMeSubmit.innerText = 'You got ' + correct + ' out of 5... Clearly you need to brush up on my history.';
+    }
+    aboutMeSubmit.disabled = true;
+    aboutMeReset.disabled = false;
 
 
     return false;
+}
+
+function resetAboutMeAnswers(){
+    aboutMeResults.innerText = '';
+    aboutMeSubmit.innerText = 'How did I do?'
+    aboutMeSubmit.disabled = false;
+    aboutMeReset.disabled = true;
 }
