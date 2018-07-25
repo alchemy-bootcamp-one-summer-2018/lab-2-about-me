@@ -1,5 +1,4 @@
 # Lab 3 Element Counter
-===
 
 This lab adds the ability to analyze your "about me" 
 website by allowing the user to check the type of elements 
