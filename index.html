@@ -17,14 +17,14 @@
     <h3>Past Jobs:</h3>
         <p>
             <ul>
-                <li>Movie Theater Usher/Popcorn Pusher</li>
-                <li>Petsmart Drone/Poop Scooper</li>
-                <li>Gamestop Peon/Grandparent Christmas Gift Helper</li>
-                <li>Salt & Straw Scoop Slinger/Waffle Cone Artist</li>
-                <li>Preschool Teacher/Preschooler Wrangler</li>
-                <li>Art Gallery Curator/Dust Cleaner</li>
-                <li>Server/Bartender/Ranch Dressing Retriever</li>
-                <li>Viner/Content Creator/I know, It's Embarrassing</li>
+                <li>Movie Theater Usher/Popcorn Pusher<
+                <li>Petsmart Drone/Poop Scooper<
+                <li>Gamestop Peon/Grandparent Christmas Gift Helper<
+                <li>Salt & Straw Scoop Slinger/Waffle Cone Artist<
+                <li>Preschool Teacher/Preschooler Wrangler<
+                <li>Art Gallery Curator/Dust Cleaner<
+                <li>Server/Bartender/Ranch Dressing Retriever<
+                <li>Viner/Content Creator/I know, It's Embarrassing<
             </ul>
         </p>
         <p>Now that you know a little bit about my career choices, I can tell you more about
@@ -91,11 +91,27 @@
         <p>Guess My Age! (Between 20 and 40)</p>
         <input name="number" require>
         <button type="submit">Guess!</button>
-
         <p id="guess-results"></p>
     </form>
-    
+
+    <form onsubmit="return countTags()">
+
+        <ul>
+            <li><label><input type="checkbox" name="tags" value="p">p</label></li>
+            <li><label><input type="checkbox" name="tags" value="div">div</label></li>
+            <li><label><input type="checkbox" name="tags" value="form">form</label></li>
+            <li><label><input type="checkbox" name="tags" value="button">button</label></li>
+            <li><label><input type="checkbox" name="tags" value="em">em</label></li>
+            <li><label><input type="checkbox" name="tags" value="ul">ul</label></li>
+            <li><label><input type="checkbox" name="tags" value="li">li</label></li>
+        </ul>
+            <div>
+                <button>Submit!</button>
+            </div>
+        </form>
+    </form>
     <script src="check-js-answers.js"></script>
     <script src="check-guess-answers.js"></script>
+    <script src="check-checkboxes.js"></script>
 </body>
 </html>
