@@ -11,10 +11,11 @@ var totalGuesses = 0;
 
 function checkGuessAnswer() {
     var guess = guessForm.elements.show.value;
+    console.log(guess);
     var guessesLeft = 5;
 
-    // eslint-disable-next-line
-    if(guess == 'All of the above') {
+    if(guess === 'All of the above') {
+        document.getElementById('guess-results').classList.add('correct');
         guessResults.innerText = 'You won!';
         reset2.disabled = false;
         submit2.disabled = true;
@@ -24,10 +25,11 @@ function checkGuessAnswer() {
         guessesLeft = 5 - totalGuesses;
         console.log(totalGuesses);
         if(guessesLeft !== 0){
-            guessResults.innerText = 'Wrong: ' + String(totalGuesses) + ' bad guesses. ' + String(guessesLeft) + ' guesses left.';
+            guessResults.innerText = `Wrong: ${totalGuesses} bad guesses. ${guessesLeft} guesses left. Hint: she REALLY likes reality TV.`;
         }
         else {
-            guessResults.innerText = 'You lose!';
+            document.getElementById('guess-results').classList.add('wrong');
+            guessResults.innerHTML = 'You lose!';
             guessesLeft = 5;
             totalGuesses = 0;
             reset2.disabled = false;
@@ -41,4 +43,6 @@ function resetGuessAnswer2() {
     guessResults.innerText = '';
     submit2.disabled = false;
     reset2.disabled = true;
+    document.getElementById('guess-results').classList.remove('wrong');
+    document.getElementById('guess-results').classList.remove('correct');
 }
