@@ -1,10 +1,15 @@
 
 h1 {
     color: purple;
+    text-shadow: 3px 2px rgb(239, 224, 243);
 }
 h2 {
     color: rgb(175, 87, 197);
 }
 h3 {
     color: plum;
+}
+
+body {
+    background-color: rgb(247, 236, 248);
 }
