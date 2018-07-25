@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>About Me</title>
+</head>
+<body>
+    
+    <h1>About Me:</h1>
+    <p>Hi! My name is Sophie Graham I was born and raised in Portland! <br>
+    Unlike me, my family is from Mississippi! I love dessert, chocolate is <br>
+    my favorite! One of my favorite Portland pastimes is kayaking on the <br>
+    Willamette! If I had to pick a favorite season, I'd say Summer!</p>
+  
+    <h1> About Me Game:</h1> 
+   <form id="facts-form"
+   onsubmit="return checkJSAnswers()"
+   onreset="resetJSAnswers()">
+   <div>
+       <label>Where am I from?</label>
+       <p><input type="text" name="hometown" required></p>
+   </div>
+   <div>
+       <p>Do I like dessert?</p>
+       <p>
+        <label>
+       <input type="radio" name="runInBrowser"
+            value="yes" required> Yes
+       </label>
+       <label>
+        <input type="radio" name="runInBrowser"
+            value="no" required> No
+       </label>
+       </p>
+   </div>
+   <div>
+       <p>What is my favorite thing to do in Portland?</p>
+       <p>
+        <label>
+        <input type="radio" name="hobby" value="Hike" required> Hike Forest Park
+        </label>
+        <label>
+        <input type="radio" name="hobby" value="Kayak" required> Kayak on the Willamette
+        </label>
+        <label>
+        <input type="radio" name="hobby" value="Blazer" required> Go to Blazer games
+        </label>
+        </p>
+   </div>
+   <div>
+        <label>Where is my family from?</label>
+        <p><input type="text" name="family" required></p>
+    </div>
+    <div>
+        <p>What is my favorite season?</p>
+        <p>
+        <label>
+        <input type="radio" name="season" value="Fall" required> Fall
+        </label>
+        <label>
+        <input type="radio" name="season" value="Winter" required> Winter
+        </label>
+        <label>
+        <input type="radio" name="season" value="Spring" required> Spring
+        </label>
+        <label>
+        <input type="radio" name="season" value="summer" required> Summer
+        </label>
+        </p>
+    </div>
+
+   <button id="js-submit" type="submit"> Check Answers</button>
+   <button id="js-reset" type="reset" disabled>Play Again</button>
+  
+   
+   <p id ="js-results"></p>
+</form>
+   <script src="checkJSAnswers.js"></script>
+  
+   <h1>Guessing Game:</h1>
+   <form id="guess-form"
+   onsubmit="return checkGuessAnswers()"
+   onreset="resetGuessAnswers()">
+   <div>
+       <label> 1. </label>
+   </div>
+   <div>
+       <label> 2. </label>
+    </div>
+    <div>
+       <label> 3. </label>
+    </div>
+    <div>
+       <label> 4. </label>
+    </div>
+    <div>
+       <label> 5. </label>
+    </div>
+
+  
+   <button id="GuessAnswers" type="submit"> Submit your guess!</button>
+   <button id="PlayAgain" type="reset" disabled>Play Again!</button>
+</form>
+</body>
+</html>
