@@ -5,34 +5,51 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+<link rel = "stylesheet" href = "main.css">
 </head>
 <body>
-    <h1>Food Quiz</h1>
+    <h1>My Favorite Food Quiz</h1>
     <form id="facts-form"
         onsubmit="return checkJSAnswers()"
         onreset="resetJSAnswers()">
-        <div>
-            <label>
-                What type of dessert do I like?</label>
-                <p><input type="text" name="dessert" required></p>
-        </div>
-        <div>
-            <p>Do I like pizza?</p>       
-        <p>
+      <div>
+       <label> What type of dessert do I like?</label>
+        <p><input type="text" name="dessert" required></p>
+      </div>
+        <p>Pizza is the best, right?</p>    
+        <img src= "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQc73tyu6vQtJuSNroGNItDpD6AuNCifh7YoiT51KN5q688H5In" alt="cheesy pizza">
+        <br>
         <label>
-            <input type="radio" name="runInBrowser"
+         <input type="radio" name="runInBrowser"
             value="yes" required> Yes    
         </label>
         <label>
             <input type="radio" name="runInBrowser"
             value="no" required> No
         </label>
+    <div>
+        <br>
         <label>What is my favorite ice cream flavor </label>
-        </p>
         <p><input type="text" name="iceCream" required></p>
-        </div>
+    </div>
+    <p>Ice cream is best with a waffle cone!</p>
+       <label><input type="radio" name="waffle" required> Agree!
+    </label>
+    <label><input type="radio" name="waffle" required> Disagree!
+    </label>
+    <p>I think noodles are awesome. Do you?</p>
+   <div> <label>
+        <input type="radio" name="noodles" value="yes" required> Yes
+    </label>
+    <label>
+        <input type="radio" name="noodles" value="no" required> No
+    </label>
+    </div>
+    <br>
         <button id="js-submit" type="submit">Check Answers</button>
-        <button id="js-reset" type="reset" disabled>Play again</button>
+    <br>
+    <br>
+        <button id="js-reset" type="reset">Play again</button>
         <p id="js-results"></p>
     </form>
     <script src="check-js-answers.js"></script>
