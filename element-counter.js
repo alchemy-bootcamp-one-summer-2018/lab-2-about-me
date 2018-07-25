@@ -5,19 +5,27 @@ function countTags() {
     console.log(tags);
     var tagCount = {};
     var html = '<ul>';
+
     for(var i = 0; i < tags.length; i++) {
-        console.log(tags[i].value);
+        console.log('tag value', tags[i].value);
         var tag = tags[i].value;
         var matches = document.querySelectorAll(tag);
-        console.log(matches.length);
+        console.log('match length', matches.length);
         tagCount[tag] = matches.length;
-        console.log(tagCount);
+        console.log('tag count', tagCount);
     }
 
     for(var x = 0; x < tags.length; x++) {
         var key = Object.keys(tagCount)[x];
-        html += `<li> ${key} ${tagCount[x]} + <li>`;
+        var value = tagCount[key];
+        html += `<li> ${key} ${value} <li>`;
+        console.log('value', value);
     }
+
+    html += '</ul>';
+    var element = document.getElementById('results');
+    element.innerHTML = html + 'dont everyone thank me at once!';
+    console.log('element is called');
 
     return false;
 }
