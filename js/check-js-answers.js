@@ -6,6 +6,7 @@ var submit = document.getElementById('submit');
 var reset = document.getElementById('reset');
 
 function checkAboutMe() {
+    // eslint-disable-next-line
     console.log('checkAboutme called');
 
     var elements = form.elements;
