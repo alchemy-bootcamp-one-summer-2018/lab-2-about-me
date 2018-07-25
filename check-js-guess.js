@@ -1,4 +1,4 @@
-/*Exported checkGuessAnswer*/
+/* Exported checkGuessAnswer */
 
 var guessForm = document.getElementById ("guess-form");
 var guessResult = document.getElementById ("guess-result");
@@ -11,12 +11,13 @@ var totalGuesses = 0;
 function checkGuessAnswer() {
 
     var guess = guessForm.elements.otter.value;
-        if (guess == 'otter') {
+
+    if(guess === 'otter'); {
         guessResult.innerText = 'That\'s right! An ' + guess + ' is my favorite!';
         console.log ('this is what user guessed', guess)
-        }
+    }
 
-    else {
+    else{
 
         totalGuesses = totalGuesses + 1;
         console.log (totalGuesses)
@@ -25,7 +26,6 @@ function checkGuessAnswer() {
         totalGuesses + ' times try again!'
     }
 
-    
     
     return false;
 
