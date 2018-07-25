@@ -1,5 +1,5 @@
 
-/* Exported resetJSAnswers, checkJSAnswers */
+/* exported resetJSAnswers, checkJSAnswers */
 
 var factForm = document.getElementById('fact-form');
 var factSubmit = document.getElementById('js-submit');
