@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <h1>About Me</h1>
+
+    <blockquote>Hi there! I'm Ron. I recently moved from St. Louis, Missouri about a month and a half ago, driving across the country to attend ACL!
+            I've worked in IT the past few years, my past couple of roles being in Systems Administration (SysAdmin).
+            I've also had brief work experience for a startup, primarily using Python for their web application 
+            Presently, I'm working at Bellagios Pizza some nights, and weekends while attending boot camp during the day.   
+            Some of my favorite foods include Steak, Ramen, any sort of BBQ... and I LOVE candy. At this point, I've completed
+            most of 3 college degrees or so. I love Science, Engineering and Math, but have found the employment prospects for
+            these to be less appealing than advertised. My nearest term goal is to use the next half year+ practicing and studying
+            to re-enter the workforce as a full-stack developer.</blockquote>
+
+    <form id="bio-form"
+          onsubmit="return checkJSAnswers()"
+          onreset="resetJSAnswers()">
+        <div>
+            <label>What state did I move from?</label>
+        <div/>
+        <div>
+            <p><input id="move-input" type="text" name="moved" required></p>
+        </div>
+        <div>
+            <label>What kind of work did I do before moving here?</label>
+        </div>
+        <div>
+            <p><input id="job-input" type="text" name="job" required></p>
+        </div>
+        <div>
+            <label>What programming language did I primarily use before JavaScript?</label>
+        </div>
+        <div>
+            <p><input id="language-input" type="text" name="lang" required></p>
+        </div>
+        <div>
+            <label>Where do I work nights and weekends?</label>
+        </div>
+        <div>
+            <p><input id="pizza-input" type="text" name="pizza" required</p>
+        </div>
+        
+        <div>
+            <p>Do I like candy?</p>
+            <p id="candy-buttons">
+                <label>
+                    <input type="radio" name="candySelection"
+                        value="yes" required> Yes
+                </label>
+                <label>
+                    <input type="radio" name="candySelection"
+                        value="no" required> No
+                </label>
+            </p>
+        </div>
+        <button id="js-submit" type="submit">Check Answers</button>
+        <button id="js-reset" type="reset" disabled>Play Again</button>
+
+        <p id="js-results"></p>
+    </form>
+
+    <h1>Guessing Game</h1>
+    
+    <form id="guess-form" onsubmit="return checkGuessAnswer()">
+        <p>Guess a number between 1 and 10</p>
+        <input name="number" require>
+        <button type="submit">Guess</button>
+
+        <p id="guess-results"></p>
+    </form>
+
+    <script src="check-js-answers.js"></script>
+    <script src="check-guess-answers.js"></script>
+</body>
+</html>
