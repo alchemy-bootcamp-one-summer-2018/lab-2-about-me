@@ -8,6 +8,10 @@ var guessReset = document.getElementById('guess-reset');
 // Setting initial value of winning number
 var winningNumber = Math.floor(Math.random() * 100) + 1;
 
+var inputBox = document.getElementById('input');
+
+var feedback = document.getElementById('guessFeedback');
+
 function checkGuess() {
 
     console.log('winningNumber: ', winningNumber)
@@ -15,7 +19,6 @@ function checkGuess() {
     var guessingGame = document.getElementById('guessing-game');
     var elements = guessingGame.elements; 
     var guess = elements.guess.value;
-    var feedback = document.getElementById('guessFeedback');
     console.log('guess: ', guess);
     console.log('guessCountBefore: ', guessCount);
     guessCount++;
@@ -24,8 +27,10 @@ function checkGuess() {
 
     if (guess > winningNumber) {
         feedback.innerText = 'The winning number is lower than ' + guess;
+        inputBox.value = '';
     } else if (guess < winningNumber) {
         feedback.innerText = 'The winning number is higher than ' + guess;
+        inputBox.value = '';
     } else if (parseInt(guess) === winningNumber) {
         feedback.innerText = 'You Win!!! ' + guess + ' is right, and you got the answer in only ' + guessCount + ' guesses.';
         // Disable the submit button
@@ -54,4 +59,5 @@ function resetGuess() {
     guessSubmit.disabled = false;
     guessReset.disabled = true;
     winningNumber = Math.floor(Math.random() * 100) + 1;
+    feedback.innerText = '';
 }

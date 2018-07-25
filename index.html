@@ -98,13 +98,13 @@
     <form id="guessing-game" onsubmit="return checkGuess()" onreset="return resetGuess()">
         
         <h2>Guessing Game</h2>
-        <p>How many tries does it take you to guess a random number between 1 and 100?</p>
+        <p>Can you guess a random number between 1 and 100 in ten guesses or less?</p>
 
         <div>
             <p>Guess a number between 1 and 100: </p>
                 
             <label>
-                <input type="number" name="guess" required>
+                <input type="number" name="guess" id="input" required>
             </label>
             <button type="submit" id="guess-submit">Check Guess</button>
             <button type="reset" id="guess-reset" disabled>Try Again</button>
