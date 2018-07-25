@@ -1,3 +1,4 @@
+/* exported checkJSAnswers */
 var factForm = document.getElementById('facts-form');
 var factResults = document.getElementById('js-results');
 
@@ -10,7 +11,6 @@ function checkJSAnswers() {
     var hobby = elements.hobby.value;
     var family = elements.family.value;
     var season = elements.season.value;
- 
     console.log('hometown', hometown);
     console.log('runInBrowser', runInBrowser);
     console.log('hobby', hobby);
@@ -33,9 +33,8 @@ function checkJSAnswers() {
     if(season.toLowerCase() === 'summer') {
         correct = correct + 1;
     }
-  
 
-    console.log('results1')
+    console.log('results1');
     factResults.innerText = 'You got ' + correct + ' out of 5 right!';
     return false;
-    }
+}
