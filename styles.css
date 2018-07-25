@@ -90,3 +90,12 @@ button {
 .results {
     padding-bottom: 1.5em;
 }
+
+ul {
+    list-style-type: none;
+}
+
+li {
+    padding-top: 1em;
+    margin-left: -40px;
+}
