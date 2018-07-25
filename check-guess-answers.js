@@ -12,7 +12,6 @@ var totalGuesses = 0;
 //function to check guess event on submit
 function checkGuessAnswer() {
     var guess = guessForm.elements.number.value;
-    
     // eslint-disable-next-line
     if(guess == 4) {
         console.log('correct');
