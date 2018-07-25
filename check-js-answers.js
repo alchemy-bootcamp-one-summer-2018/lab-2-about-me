@@ -3,7 +3,7 @@
 
 var factForm = document.getElementById("fact-form");
 var factSubmit = document.getElementById("js-submit");
-var factResult = document.getElementById("js-results");
+var factResult = document.getElementById("js-result");
 var factReset = document.getElementById("js-reset");
 
 
@@ -42,13 +42,12 @@ function checkJSAnswers () {
     }
         
 
-    factResult.innerText = 'wow you got ' + correct + ' out of 5 right';
+    factResult.innerText = 'HIGH-FIVE!!! You got ' + correct + ' out of 5 right!';
     factSubmit.disabled = true; 
     factReset.disabled = false;
 
     return false;
  }
-
 
 
 function resetJSAnswers() {
