@@ -15,7 +15,7 @@ Make a branch for today's lab!
 
 ## Tools
 
-* Use a Manage a form submission like we did in yesterdays lab
+* Manage a form submission like we did in yesterdays lab
 * Use `document.querySelectorAll` to find matching elements
 * Use arrays and objects to manage the data
 * Mediate the data between JavaScript and the visible DOM output
