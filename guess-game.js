@@ -12,8 +12,8 @@ function checkJerseyAnswer() {
 
     console.log('guess:', guess);
 
-    if(guess === 38) {
-        guessInterface.results.innerText = 'Right!';
+    if(guess === '38') {
+        guessInterface.results.innerText = 'You\'re a genius, Gump';
         console.log('You guessed correctly!');
     }
     else {

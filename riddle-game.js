@@ -1,52 +1,30 @@
 /* exported checkRiddleAnswer */
 
-
-var guessInterface = {
-    form: document.getElementById('jersey-form'),
-    results: document.getElementById('jersey-results'),
+var riddleInterface = {
+    form: document.getElementById('riddle-form'),
+    results: document.getElementById('riddle-results'),
 };
 
-var guessForm = document.getElementById('guess-form');
-var totalGuesses = 0
+var riddleAttempts = 0;
 
 function checkRiddleAnswer() {
-    var guess = guessForm.customElements.number.value;
+    var guess = riddleInterface.form.riddle.value;
 
     console.log(guess);
 
-    if (guess === "") {
+    if(guess === 'blowing in the wind') {
         // let them know that they won
-    }
-    else {
-        guessResults.innerText = 'Wrong';
-        totalGuesses += 1
-        console.log(totalGuesses)
-    }
-}
-
--------------
-
-var guessInterface = {
-    form: document.getElementById('jersey-form'),
-    results: document.getElementById('jersey-results'),
-};
-
-var guessAttempts = 0;
-
-function checkJerseyAnswer() {
-    var guess = guessInterface.form.jersey.value;
-
-    console.log(guess);
-
-    if(guess === "blowing in the wind") {
-        // let them know that they won
-        guessInterface.results.innerText = 'The answer, my friend, is blowing in the wind';
+        riddleInterface.results.innerText = 'You are a man of good taste';
         console.log('they riddled correctly!');
     }
+    else if(riddleAttempts <= 3){
+        riddleInterface.results.innerText = 'Wrong, my friend';
+        riddleAttempts += 1;
+        console.log(riddleAttempts);
+    }
     else {
-        guessInterface.results.innerText = 'Wrong';
-        guessAttempts += 1;
-        console.log(guessAttempts);
+        riddleInterface.results.innerText = 'The answer, my friend, is blowing in the wind!';
+        console.log('they ran out of guesses');
     }
 
     return false;

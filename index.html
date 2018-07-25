@@ -155,7 +155,7 @@
                     <button id="about-me-reset" type="reset">Play Again</button>
                 </div>
 
-                <p id="about-me-results"></p>
+                <p id="about-me-results" class="results-tracker"></p>
 
             </form>
 
@@ -170,10 +170,10 @@
                     <legend>Sports</legend>
                     <p class="question">What was my number when I played football?</p>
                     <input class="text" type="text" name="jersey" required />
-                    <button type="submit" name="jersey">Guess</button>
+                    <button type="submit">Guess</button>
                 </fieldset>
 
-                <p id="jersey-results"></p>
+                <p id="jersey-results" class="results-tracker"></p>
             </form>
 
         </div>
@@ -182,13 +182,15 @@
             <h3 class="game-head">How good are you at riddling?</h3>
 
             <form id="riddle-form"
-                onsubmit="return checkRiddleAnswer">
+                onsubmit="return checkRiddleAnswer()">
                 <fieldset>
                     <legend>Riddle me timbers</legend>
                     <p class="question">How many codes must a man write down before you call him a man?</p>
                     <input name="riddle" require />
-                    <button type="submit" name="riddle">Guess</button>
+                    <button type="submit">Guess</button>
                 </fieldset>
+
+                <p id="riddle-results" class="results-tracker"></p>
             </form>
 
         </div>
