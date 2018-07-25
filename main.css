@@ -1,0 +1,149 @@
+header {
+    display: block;
+    padding: 40px;
+    text-align: center;
+    font-size: 5em;
+    background-image: url(https://media.gadventures.com/media-server/cache/68/18/681877d5dff9ecff0353263ee6fa00ae.jpg);
+}
+
+h1 {
+    padding: 0.4em 0.1em 0.1em;
+    margin: 0px;
+    text-shadow: 5px 5px 15px darkolivegreen;
+    color: silver;
+}
+
+h2 {
+    padding: 2em;
+    margin: 0px;
+    font-size: 4em;
+    text-align: center;
+    text-shadow: 5px 5px 15px maroon;
+    color: lightgrey;
+    background-color: lavender;
+}
+
+h2.top {
+    text-shadow: 5px 5px 15px midnightblue;
+}
+
+h3.upper {
+    text-align: center;
+    font-size: 2.5em;
+}
+
+div.black {
+    background-color: black;
+    padding: 20px 20px 20px 20px;
+}
+
+h3.game-head {
+    color: darkred;
+}
+
+legend {
+    color: indianred;
+}
+
+p.question {
+    color: darksalmon;
+    font-family: sans-serif;
+}
+
+label {
+    color: darkkhaki;
+    cursor: pointer;
+}
+
+fieldset {
+    background: oldlace;
+}
+
+table, th, td {
+    border: 0.1em solid black;
+}
+
+table {
+    margin-left: auto;
+    margin-right: auto;
+    background: aliceblue;
+}
+
+td img {
+    width: 240px;
+    height: 240px;
+}
+
+#icon {
+    width: 5%;
+    margin: 0.1em;
+    border-color: lightgray !important;
+    border-style: groove;
+    border-width:5px;
+
+}
+
+#me {
+    width: auto;
+    display: block;
+    margin: auto;
+}
+
+#me-block {
+    border: solid;
+    border-color: lightgray;
+}
+
+.bio-section {
+    background: honeydew;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+}
+
+figcaption {
+    font-weight: bolder;
+    font-family: arial;
+    margin: 0.3em;
+}
+
+button {
+    font-size: 0.75em;
+    padding: 0.5em;
+    background-color: dimgray;
+    color: gainsboro;
+}
+
+.row {
+    display: flex;
+}
+
+.column {
+    flex: 50%;
+}
+
+.column p.bio {
+    margin: 2em 2em;
+}
+
+input.text {
+    width: 30em;
+}
+
+p.results-tracker {
+    background: red;
+    background: -webkit-linear-gradient(left, orange , yellow, green, cyan, blue, violet);
+    background: -o-linear-gradient(right, orange, yellow, green, cyan, blue, violet);
+    background: -moz-linear-gradient(right, orange, yellow, green, cyan, blue, violet);
+    background: linear-gradient(to right, orange , yellow, green, cyan, blue, violet);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 3em;
+    margin: 0.1em;
+    font-weight: bold;
+}
+
+#hof {
+    text-shadow: 5px 5px 15px darkgoldenrod;
+    color: white;
+    background-color: black;
+
+}

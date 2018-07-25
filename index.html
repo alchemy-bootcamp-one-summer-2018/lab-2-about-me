@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab 2</title>
+    <link rel="stylesheet" type="text/css" href="main.css" />
+</head>
+
+<body>
+    <header>
+        <h1>Jack's Page</h1>
+        <a href="http://github.com/miloofcroton/"><img id="icon" src="http://www.clker.com/cliparts/Q/7/J/K/1/d/house-grey.svg" alt="home"/></a>
+    </header>
+
+    <h2 class="top">About Me</h2>
+
+    <div class="row">
+        <div class="column bio-section" >
+            <div class="upper">
+                <h3 class="upper">Bio</h3>
+            </div>
+            <p class="bio">
+                I was raised by wolves.
+            </p>
+            <p class="bio">
+                Actually, that's not entirely true.
+            </p>
+            <p class="bio">
+                I was at least partially raised by German Shepherds though. My grandma had dogs her entire life, and the German Shepherds that she had were actually bred by someone that supplied elite police forces with dogs.
+            </p>
+            <p class="bio">
+                My mom had one of these dogs too, and it was a sweet dog. That is unless a man that she didn't know tried to get inside the house. They would be up against the wall faster than you can say 'run for your life'.
+            </p>
+
+        </div>
+
+        <div class="column">
+            <div class="upper black">
+                <h3 id="hof" class="upper">My Hall of Fame</h3>
+            </div>
+            <table>
+                <tr>
+                    <td><img src="https://www.biography.com/.image/t_share/MTE1ODA0OTcxNzcxOTg3NDY5/theodore-roosevelt-9463424-1-402.jpg" /></td>
+                    <td><img src="http://www.virtuesforlife.com/wp-content/uploads/2012/09/einstein-photo.jpg" /></td>
+                    <td><img src="https://optimizehq.imgix.net/authors/headshots/aristotle.jpg" /></td>
+                </tr>
+                <tr>
+                    <td><img src="https://www.biography.com/.image/ar_1:1%2Cc_fill%2Ccs_srgb%2Cg_face%2Cq_auto:good%2Cw_300/MTE5NDg0MDU1MTUzMTE2Njg3/alan-turing-9512017-1-402.jpg" /></td>
+                    <td><img src="https://pbs.twimg.com/profile_images/725013638411489280/4wx8EcIA.jpg" /></td>
+                    <td><img src="https://i.guim.co.uk/img/media/8db8a9c516b22b50560ff194f3a46ca3c76c8500/0_0_2371_2371/master/2371.jpg?w=300&q=55&auto=format&usm=12&fit=max&s=1961130d78d2a013780d4ee6b9ac9181" /></td>
+                </tr>
+                <tr>
+                    <td><img src="https://hips.hearstapps.com/pop.h-cdn.co/assets/15/14/1024x1024/square-1427814227-richard-feynman.jpg?resize=768:*" /></td>
+                    <td><img src="http://www.athletespeakers.com/upload/images/speakers/5548/267x267_Screen%20shot%202015-03-17%20at%209.21.19%20AM.png" /></td>
+                    <td><img src="https://www.biography.com/.image/t_share/MTIwNjA4NjMzNzIxNzUxMDUy/alexander-the-great-wc-9180468-1-402.jpg" /></td>
+                </tr>
+
+            </table>
+        </div>
+
+        <div id="me-block" class="column">
+            <h3 class="upper">Travelin' Man</h3>
+            <img id="me" src="https://avatars1.githubusercontent.com/u/11794494?s=460&v=4" alt="me"/>
+            <div align="center">
+                <figcaption>My cousin and I found this in Middle of Nowhere, New Hampshire</figcaption>
+            </div>
+
+        </div>
+    </div>
+
+
+    <hr />
+
+    <h2>The Game Zone</h2>
+
+
+    <div class="row">
+        <div class="column">
+            <form id="about-me-form"
+                onsubmit="return checkAboutMeAnswers()"
+                onreset="return resetAboutMeAnswers()">
+
+                <h3 class="game-head">How well do you know me?</h3>
+
+                <div>
+
+                    <fieldset>
+                        <legend>"Deep" questions, with Jack Handy</legend>
+                        <p class="question">What is my favorite sea animal?</p>
+                        <input class="text" type="text" name="seaAnimal" placeholder="Hint... It uses chromatophores to change color!" required/>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Pets</legend>
+                        <p class="question">Check all the pets that I've had.</p>
+
+                        <label for="dog">
+                            <input id="dog" type="checkbox" name="pets" value="dog"/>
+                            Dog
+                        </label>
+                        <label for="cat">
+                            <input id="cat" type="checkbox" name="pets" value="cat"/>
+                            Cat
+                        </label>
+                        <label for="fish">
+                            <input id="fish" type="checkbox" name="pets" value="fish"/>
+                            Fish
+                        </label>
+                        <label for="snake">
+                            <input id="snake" type="checkbox" name="pets" value="snake"/>
+                            Snake
+                        </label>
+                        <label for="tarantula">
+                            <input id="tarantula" type="checkbox" name="pets" value="tarantula"/>
+                            Tarantula
+                        </label>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Music</legend>
+                        <p class="question">Black Sabbath or AC/DC?</p>
+                        <label for="sabbath">
+                            <input id="sabbath" type="radio" name="classicRock" value="sabbath" checked required/>
+                            Black Sabbath
+                        </label>
+                        <br />
+                        <label for="acdc">
+                            <input id="acdc" type="radio" name="classicRock" value="acdc" checked required/>
+                            AC/DC
+                        </label>
+
+                        <p class="question">Black Flag or Rollins Band?</p>
+                        <label for="black-flag">
+                            <input id="black-flag" type="radio" name="hardcore" value="black-flag" required/>
+                            Black Flag
+                        </label>
+                        <br />
+                        <label for="rollins-band">
+                            <input id="rollins-band" type="radio" name="hardcore" value="rollins-band" required/>
+                            Rollins Band
+                        </label>
+
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Books</legend>
+                        <p class="question">Which book did I read in high school and love?</p>
+                        <select name="book">
+                            <option value="catcher">The Catcher in the Rye</option>
+                            <option value="frankenstein">Frankenstein</option>
+                            <option value="atlas">Atlas Shrugged</option>
+                            <option value="huckleberry">The Adventures of Huckleberry Finn</option>
+                        </select>
+                    </fieldset>
+
+                </div>
+
+                <div>
+                    <button id="about-me-submit" type="submit">Check Answers</button>
+                    <button id="about-me-reset" type="reset">Play Again</button>
+                </div>
+
+                <p id="about-me-results" class="results-tracker"></p>
+
+            </form>
+
+        </div>
+
+        <div class="column">
+            <h3 class="game-head">How good are you at guessing?</h3>
+
+            <form id="jersey-form"
+                onsubmit="return checkJerseyAnswer()">
+                <fieldset>
+                    <legend>Sports</legend>
+                    <p class="question">What was my number when I played football?</p>
+                    <input class="text" type="text" name="jersey" required />
+                    <button type="submit">Guess</button>
+                </fieldset>
+
+                <p id="jersey-results" class="results-tracker"></p>
+            </form>
+
+        </div>
+
+        <div class="column">
+            <h3 class="game-head">How good are you at riddling?</h3>
+
+            <form id="riddle-form"
+                onsubmit="return checkRiddleAnswer()">
+                <fieldset>
+                    <legend>Riddle me timbers</legend>
+                    <p class="question">How many codes must a man write down before you call him a man?</p>
+                    <input name="riddle" require />
+                    <button type="submit">Guess</button>
+                </fieldset>
+
+                <p id="riddle-results" class="results-tracker"></p>
+            </form>
+
+        </div>
+    </div>
+    
+    <hr />
+        
+    <h2>New Lab!</h2>
+
+    <div class="row">
+        <div class="column">
+            <h3 class="game-head">I'm feeling good about this lab...</h3>
+    
+            <form id="element-counter" 
+                onsubmit="return countElements()">
+                <fieldset>
+                    <legend>Elements</legend>
+                    <p class="question">Check all the elements.</p>
+                    
+                    <label for="p">
+                        <input id="p" type="checkbox" name="tags" value="p" checked/> p <br>
+                    </label>
+                    <label for="input">
+                        <input id="input" type="checkbox" name="tags" value="input" checked/> input <br>
+                    </label>
+                    <label for="img">
+                        <input id="img" type="checkbox" name="tags" value="img" checked/> img <br>
+                    </label>
+                    <label for="form">
+                        <input id="form" type="checkbox" name="tags" value="form" checked/> form <br>
+                    </label>
+                    <label for="div">
+                        <input id="div" type="checkbox" name="tags" value="div" checked/> div <br>
+                    </label>
+                </fieldset>
+                
+                <button type="submit">Count</button>
+
+                <p id="elements-results" class="results-tracker"></p>
+            </form>
+        
+        </div>
+    </div>
+
+
+    <script src="about-me-game.js"></script>
+    <script src="guess-game.js"></script>
+    <script src="riddle-game.js"></script>
+    <script src="element-counter.js"></script>
+</body>
+
+</html>
