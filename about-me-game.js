@@ -8,10 +8,6 @@ var aboutInterface = {
     results: document.getElementById('about-me-results'),
 };
 
-
-
-var score = 0;
-
 function checkAboutMeAnswers() {
 
     var elements = aboutInterface.form.elements;
@@ -40,8 +36,11 @@ function checkAboutMeAnswers() {
     console.log('answerInput', answerInput);
     console.log('answerKey', answerKey);
 
-    for each (key in answerInput){
-        if(answerInput.key === answerKey.key) {
+    var score = 0;
+
+    for(var key in answerInput){
+        if((answerInput.hasOwnProperty(key)) &&
+            (answerInput.key === answerKey.key)){
             score += 1;
         }
     }
