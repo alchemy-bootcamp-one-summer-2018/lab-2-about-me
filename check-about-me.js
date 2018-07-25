@@ -128,7 +128,6 @@ function checkAboutMe() {
 
     // Prevents browser window from refreshing automatically
     return false;
-
 }
 
 // This function will run whenever the user presses the Try Again button
