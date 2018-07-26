@@ -24,7 +24,7 @@
           onreset="resetJSAnswers()">
         <div>
             <label>What state did I move from?</label>
-        <div/>
+        </div>
         <div>
             <p><input id="move-input" type="text" name="moved" required></p>
         </div>
@@ -77,7 +77,22 @@
         <p id="guess-results"></p>
     </form>
 
+    <form onsubmit="return checkElementCounter()">
+        <label><input type="checkbox" name="tags" value="p"> p</label>
+        <label><input type="checkbox" name="tags" value="input"> input</label>
+        <label><input type="checkbox" name="tags" value="label"> label</label>
+        <label><input type="checkbox" name="tags" value="div">div</label>
+        <label><input type="checkbox" name="tags" value="button">button</label>
+        <label><input type="checkbox" name="tags" value="h1">h1</label>
+        <label><input type="checkbox" name="tags" value="meta">meta</label>
+        <div>
+            <button>submit</button>
+        </div>
+        <div><p id="results"></p></div>
+    </form>
+
     <script src="check-js-answers.js"></script>
     <script src="check-guess-answers.js"></script>
+    <script src="check-element-counter.js"></script>
 </body>
 </html>
