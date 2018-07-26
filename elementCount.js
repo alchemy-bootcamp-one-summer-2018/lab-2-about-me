@@ -15,18 +15,17 @@ function countTags() {
         var matches = document.querySelectorAll(tag)
         tagCount[tag] = matches.length;
     }
-    var html = "ul";
-   
-    for(var k = 0; k <tags.length; k++) {
-        html = html + "<li> + tagCount[tag] + </li>"
+    var html = "<ul>";
+    for(var k = 0; k < tags.length; k++) {
+        html = html + '<li>' + tags[k].value + tagCount[tag] + '</li>';
     }
-    console.log(Object.keys(tagCount));
-  
-
-
+    html += '</ul>';
+    console.log(html);
+    
+    var result = document.getElementById('results');
+    result.innerHTML = html;
     return false;
 }
-countTags = countTags;
 
     
 
