@@ -1,10 +1,11 @@
-/* eslint-disable-next-line */
+/* exported countTags */
+
 function countTags() {
     var tags = document.querySelectorAll('input[name="tags"]:checked');
     console.log('Showing', tags);
     var tagCount = {};
-    var i;
-    for(i = 0; i < tags.length; i++) {
+
+    for(var i = 0; i < tags.length; i++) {
         var tag = tags[i].value;
         console.log('What is', tag);
         var matches = document.querySelectorAll(tag);
@@ -12,6 +13,7 @@ function countTags() {
         tagCount[tag] = matches.length;
         console.log('How many', tagCount);
     }
+
     var html = '<ul>';
     for(var key in tagCount) {
         console.log('key', key);
@@ -20,7 +22,9 @@ function countTags() {
     }
     html += '</ul>';
     console.log('html', html);
+
     var results = document.getElementById('results');
     results.innerHTML = html;
+
     return false;
 }
