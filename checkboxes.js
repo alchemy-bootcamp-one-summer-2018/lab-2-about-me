@@ -1,4 +1,4 @@
-
+//eslint-disable-next-line
 function countTags() {
     var tags = document.querySelectorAll('input[name=tags]:checked');  //collects checked boxes
     console.log('these are all my tags: ', tags);
@@ -15,15 +15,20 @@ function countTags() {
 
     var html = '<ul>';
 
-    for(var l = 0; l < tags.length; l++) {
-        console.log('this is tags', tags.name);
-
+    for(var key in tagCount) { //this is a 'for...in loop'
+        console.log('key', key); 
+        console.log('again', tagCount[key]);
+        html += '<li>' + key + tagCount[key] + '</li>';  //string concatenate    
     }
+
+    html += '</ul>';
+
+    console.log('html', html);
+    var results = document.getElementById('results');
+    results.innerHTML = html;
 
     return false;
 }
 
-//var tag = 'p'; //assigns variable? but why?
-//var matches = document.querySelectorAll(tag);
-//tagCount[tag] = matches.length;
+
 
