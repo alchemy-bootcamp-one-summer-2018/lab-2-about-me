@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guessing Game</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <div>
+        <h1 id="header-one">Mack The Best Spaceship Captain of All Time</h1>
+        <h3 id="header-two">About Me:</h3>
+    </div>
+    <div>
+        <ul>
+            <li class="list-one">My name is Mack and I am one of the best Spaceship Captains in the galaxy.</li>
+            <li class="list-two">No I am not Han Solo (but I wish I was).</li>
+            <li class="list-three">Some say I did <em>the</em> Kessel Run in 12 Parsecs! Others... we dont talk about them.</li>
+            <li class="list-four">I always shoot first but claim innocence.</li>
+            <li class="list-five">My Heart is Gold. Like <strong>GOLD</strong> gold.</li>
+        </ul>
+    </div>
+        <form id="facts-form" 
+              onsubmit="return checkJSAnswers()"
+              onreset="resetJSAnswers()">
+        <div>
+          <label class="list-one">What is my name?</label>
+          <p><input type="text" name="myName" required></p>
+        </div>
+        <div>
+            <p class="list-three">Did I do the Kessel Run in 12 Parsecs?</p>
+            <p>
+                <label>
+                    <input type="radio" name="thatsImpossible" 
+                        value="yes" required> Yes
+                </label>
+                <label>
+                    <input type="radio" name="thatsImpossible" 
+                        value="no" required> No
+                </label>
+            </p>
+        </div>
+        <div>
+            <p class="list-four">Did I shoot Greedo First?</p>
+                <label>
+                    <input type="radio" name="noWay"
+                        value="yes" required> Yes
+                </label>
+                <label>
+                    <input type="radio" name="noWay"
+                        value="no" required> No
+                </label>
+                <label>
+                    <input type="radio" name="noWay"
+                        value="maybe" required> Maybe, thats up for debate.
+                </label>
+                <label>
+                    <input type="radio" name="noWay"
+                        value="idk" required> Sorry I wasn't paying attention :(.
+                </label>
+            </div>
+            <div>
+                <p class="list-five">On a scale of 1-10 how gold is my heart?</p>
+                    <label>
+                        <input id="range-input" type="range" name="heartOfGold" step="1" min="0" max="10" onchange="showVal(this.value)">
+                        <span id="range-display"></span>
+                    </label>
+            </div>
+            <div>
+                <p class="list-two">Am I comparing myself to the incredible Han Solo?</p>
+                <label>
+                    <select name="hanSolo">
+                        <option value="select">--select one--</option>
+                        <option value="why">Why would I think that?</option>
+                        <option value="yes">Yes you are you pathetic nerf herder</option>
+                        <option value="no">No of course not, you are the best spaceship captain</option>
+                    </select>
+                </label>
+            </div>
+            <button id="js-submit" type="submit">Check Answers</button>
+            <button id="js-reset" type="reset" disabled>Play Again</button>
+
+        <p id="js-results"></p>
+    </form>
+
+    <form id="guess-form" 
+        onsubmit="return checkGuessAnswer()"
+        onreset="setGameOver()">
+    <div>
+        <p class="guess-game">How many wookies does it take to fix a hyperdrive?</p>
+        <p class="guess-game">You have 5 guesses.</p>
+    </div>
+    <div>
+        <input type="text" name="number" required>
+        <button id="guess-submit" type="submit">Guess</button>
+        <button id="guess-reset" type="reset" disabled>Reset</button>
+        <p id="guess-results"></p>
+    </div>
+    </form>
+    
+    <form onsubmit="return countTags()">
+        <label> <input type="checkbox" name="tags" value="p"> p</label>
+        <label> <input type="checkbox" name="tags" value="div"> div</label>
+        <label> <input type="checkbox" name="tags" value="option"> option</label>
+        <label> <input type="checkbox" name="tags" value="button"> button</label>
+        <label> <input type="checkbox" name="tags" value="strong"> strong</label>
+        <label> <input type="checkbox" name="tags" value="ul"> ul</label>
+        <label> <input type="checkbox" name="tags" value="li"> li</label>
+        <button>submit</button>
+    </form>
+    <div id="results"><p>results</p></div>
+    <script src="check-js-answers.js"></script>
+    <script src="check-guess-answers.js"></script>
+    <script src="element-counter.js"></script>
+</body>
+</html>
