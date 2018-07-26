@@ -1,6 +1,7 @@
 /* exported isPrime */
 
-function isPrime() {
+function isPrime(event) {
+    event.preventDefault();
     console.log('function is running');
     var number = document.getElementById('prime_guess').value;
     var guessResult = document.getElementById('prime-results');
@@ -15,5 +16,4 @@ function isPrime() {
         guessResult.innerText = 'Prime!';
     }
     console.log(number);
-    return false;
 }

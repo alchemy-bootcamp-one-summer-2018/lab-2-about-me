@@ -18,8 +18,10 @@
 
     <nav>
         <a href="#bio">Lauren's Bio</a> |
-        <a href="#game1">Guessing Game 1</a> |
-        <a href="#game2">Guessing Game 2</a> |
+        <a href="#game1">Guessing Game 1: Trivia</a> |
+        <a href="#game2">Guessing Game 2: Reality TV</a> |
+        <a href="#game2">Guessing Game 3: Primes</a> |
+        <a href="#game4">Tag Exercise</a> |
     </nav>
 
     <section id = 'bio'>
@@ -37,7 +39,7 @@
     <section id = 'game1'>
 
         <form class = "game" id = "facts" 
-            onsubmit="return checkAboutMe()"
+            onsubmit="return checkAboutMe(event)"
             onreset="resetJSAnswers()" >
             <h1> Guessing Game 1 </h1>
             <p> 
@@ -85,7 +87,7 @@
 
     <section class = "game" id = 'game2'>
         <h1> Guessing Game 2 </h1>
-        <form id="guess-form" onsubmit="return checkGuessAnswer()" onreset="resetGuessAnswer2()">
+        <form id="guess-form" onsubmit="return checkGuessAnswer(event)" onreset="resetGuessAnswer2()">
             <p>What is Lauren's favorite reality show? </p>
                 <label> <input type="radio" name = "show" value="My 600 Pound Life"> My 600 Pound Life </label>  
                 <label> <input type="radio" name = "show" value="Real Housewives of Beverly Hills"> Real Housewives of Beverly Hills </label> 
@@ -108,7 +110,7 @@
 
     <section class = "game" id = 'game3'>
         <h1> Guessing Game 3: Primes </h1>
-        <form id="primes" onsubmit="return isPrime()">
+        <form id="primes" onsubmit="return isPrime(event)">
             <p> Guess a number that is prime:
             <label><input type="text" id="prime_guess"></label>
             </p>
@@ -117,10 +119,10 @@
             <p id="prime-results"></p>
         </form>
     </section>
-    
+
     <section class = "game" id = 'game4'>
         <h1> Tag Exercise </h1>
-        <form id="count_tags" onsubmit="return countTags()">
+        <form id="count_tags" onsubmit="return countTags(event)">
             <p> Here are tags:
                 <label> <input type="checkbox" name = "tags" value="p"> p </label> 
                 <label> <input type="checkbox" name = "tags" value="div"> div </label> 
@@ -136,10 +138,10 @@
         </form>
     
     </section>
-
+    
     <footer>
         <p>Posted by: Lauren Shareshian</p>
-        <p>Contact information: <a href="mailto:laurenshareshian@gmail.com">
+        <p>Contact information: 
         laurenshareshian@gmail.com</a></p>
     </footer>
 

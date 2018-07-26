@@ -5,8 +5,8 @@ var results = document.getElementById('results');
 var submit = document.getElementById('submit');
 var reset = document.getElementById('reset');
 
-function checkAboutMe() {
-    // eslint-disable-next-line
+function checkAboutMe(event) {
+    event.preventDefault();
     console.log('checkAboutme called');
 
     var elements = form.elements;
@@ -55,8 +55,6 @@ function checkAboutMe() {
     submit.disabled = true;
 
     reset.disabled = false;
-
-    return false;
 }
 
 function resetJSAnswers() {

@@ -9,7 +9,8 @@ var reset2 = document.getElementById('reset2');
 // track "state" _across_ calls to checkGuessAnswer
 var totalGuesses = 0;
 
-function checkGuessAnswer() {
+function checkGuessAnswer(event) {
+    event.preventDefault();
     var guess = guessForm.elements.show.value;
     console.log(guess);
     var guessesLeft = 5;
@@ -36,7 +37,6 @@ function checkGuessAnswer() {
             submit2.disabled = true;
         }
     }
-    return false;
 }
 
 function resetGuessAnswer2() {

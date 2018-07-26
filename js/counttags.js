@@ -1,6 +1,8 @@
 /* exported countTags */
 
-function countTags() {
+function countTags(event) {
+
+    event.preventDefault();
     console.log('function is running');
 
     var tags = document.querySelectorAll('input[name=tags]:checked');
@@ -23,6 +25,4 @@ function countTags() {
 
     var tag_results = document.getElementById('tag-results');
     tag_results.innerHTML = html;
-
-    return false;
 }
