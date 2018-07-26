@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <h1>About Me</h1>
+    <h2>Important Facts</h2>
+    <ul>
+        <li>I was not born in Massachusetts.</li>
+        <li>I do not know how to spin wool into yarn.</li>
+        <li>My favorite activity is not horseback riding.</li>
+        <li>My third favorite vegetable is not the beet.</li>
+        <li>My sister is not human.</li>
+    </ul>
+    <h2>Important Figures</h2>
+    <ul>
+        <li>30% of people named Claire are over 6 feet tall.</li>
+        <li>220,340 Claires committed misdemeanors in 2017.</li>
+        <li>One out of eleven Claires take milk in their tea.</li>
+        <li>It would take 286 million Claires stacked on top of each other to reach the moon.</li>
+    </ul>
+    <h2>Claire Quiz</h2>
+    <form id="facts-form"
+        onsubmit="return checkJSAnswers()"
+        onreset="resetJSAnswers()">
+
+        <div>
+            <p>What is not Claire's third favorite vegetable?</p>
+            <label>
+                <input type="radio" name="vegetable" value="No" required>Carrots
+            </label> <br>
+            <label>
+                <input type="radio" name="vegetable" value="Yes" required>Beets
+            </label> <br>
+        </div>
+
+        <div>
+            <p>How many misdemeanors were committed by Claires in 2017?</p>
+            <label>
+                <input type="radio" name="misdemeanors" value="No" required>16
+            </label> <br>
+            <label>
+                <input type="radio" name="misdemeanors" value="No" required>3
+            </label> <br>
+            <label>
+                <input type="radio" name="misdemeanors" value="Yes" required>220,340
+            </label> <br>
+            <label>
+                <input type="radio" name="misdemeanors" value="No" required>9
+            </label> <br>
+        </div>
+
+        <div>
+            <p>Claire's sister is:</p>
+            <label>
+                <input type="radio" name="sister" value="No" required>Human
+            </label> <br>
+            <label>
+                <input type="radio" name="sister" value="No" required>A Lizard Person
+            </label> <br>
+            <label>
+                <input type="radio" name="sister" value="Yes" required>It is unclear
+            </label> <br>    
+        </div>
+
+        <div>
+            <p>If you stacked them on top of each other, how many Claires would it take to get to the moon?</p>
+            <label>
+                <input type="text" name="moon" required>
+            </label> <br> 
+        </div>
+
+        <div>
+            <p>If you selected 25 Claires at random, how many of them would be under 6 feet tall?</p>
+            <label>
+                <input type="radio" name="tall" value="Yes" required>I don't know, math is hard.
+            </label> <br>
+            <label>
+                <input type="radio" name="tall" value="Yes" required>17.5
+            </label> <br>
+            <label>
+                <input type="radio" name="tall" value="No" required>220,340
+            </label> <br>
+            <label>
+                <input type="radio" name="tall" value="No" required>None of them would be under 6 feet.
+            </label> <br>
+            <label>
+                <input type="radio" name="tall" value="Yes" required>There is no way to know the answer to this question.
+            </label> <br>
+        </div>
+
+        <div>
+            <br>
+            <button id="js-submit" type="submit">Submit</button>
+            <button id="js-reset" type="reset">Reset</button>
+        </div>
+
+        <p id="js-results"></p>
+
+    </form>
+    <h2>Bonus Round</h2>
+        <div>
+            <form id="guess-form" onsubmit="return checkGuessAnswer()">
+                <p>Guess how many times has Claire been to Florida.</p>
+                <input name="florida" require>
+                <button type="submit">Submit</button>
+            </form>
+            <p id="guess-results"></p>
+         </div>
+    
+    <form onsubmit="return countTags()">
+        <label><input type="checkbox" name="tags" value="p">p</label>
+        <label><input type="checkbox" name="tags" value="div">div</label>
+        <label><input type="checkbox" name="tags" value="form">form</label>
+        <label><input type="checkbox" name="tags" value="button">button</label>
+        <label><input type="checkbox" name="tags" value="em">em</label>
+        <label><input type="checkbox" name="tags" value="ul">ul</label>
+        <label><input type="checkbox" name="tags" value="li">li</label>
+        <div>
+            <button>Submit</button>
+        </div>
+        <p id="results"></p>
+    </form>
+    <script src="check-js-answers.js"></script>
+    <script src="check-guess-answers.js"></script>
+    <script src="checkboxes.js"></script>
+</body>
+</html>
