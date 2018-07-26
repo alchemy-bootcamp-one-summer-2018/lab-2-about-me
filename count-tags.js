@@ -37,12 +37,19 @@ function countTags() {
 
     for(i = 0; i < tags.length; i++) {
 
-        // Get key from tagCount
+        console.log('2nd loop i: ', i);
+        console.log('2nd loop tagCount: ', tagCount);
+
+        // Get key from tagCount object
         var key = Object.keys(tagCount)[i];
         console.log('key: ', key);
 
+        // Get count from tagCount object
+        var finalCount = Object.values(tagCount)[i];
+
+
         // Append list item in html
-        html += '<li>' + key + ': ' + tagCount[tag] + '</li>';
+        html += '<li>' + key + ': ' + finalCount + '</li>';
         if(i === (tags.length - 1)) {
             html += '</ul>';
         }
