@@ -20,12 +20,10 @@
         <img src= "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQc73tyu6vQtJuSNroGNItDpD6AuNCifh7YoiT51KN5q688H5In" alt="cheesy pizza">
         <br>
         <label>
-         <input type="radio" name="runInBrowser"
-            value="yes" required> Yes    
+         <input type="radio" name="runInBrowser" value="yes" required> Yes    
         </label>
         <label>
-            <input type="radio" name="runInBrowser"
-            value="no" required> No
+            <input type="radio" name="runInBrowser" value="no" required> No
         </label>
     <div>
         <br>
@@ -52,6 +50,22 @@
         <button id="js-reset" type="reset">Play again</button>
         <p id="js-results"></p>
     </form>
+    <form onsubmit = "return countTags()">
+        <label><input type="checkbox" name="tags" value="p"> p</label>
+        <label><input type="checkbox" name="tags" value="div"> div</label>
+        <label><input type="checkbox" name="tags" value="form">form</label>
+        <label><input type="checkbox" name="tags" value="button">button</label>
+        <label><input type="checkbox" name="tags" value="em">em</label>
+        <label><input type="checkbox" name="tags" value="ul">ul</label>
+        <label><input type="checkbox" name="tags" value="li">li</label>
+        <div>
+            <button>submit</button>
+        </div>
+    </form>
+    <p id="results"></p>
+
+    
     <script src="check-js-answers.js"></script>
+    <script src="check-checkboxes.js"></script>
 </body>
 </html>

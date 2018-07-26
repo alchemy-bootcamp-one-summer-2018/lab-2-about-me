@@ -7,7 +7,6 @@ var factResults = document.getElementById('js-results');
 function checkJSAnswers() {
     console.log('checkJSAnswers called');
 
-
     var elements = factForm.elements;
     var dessert = elements.dessert.value;
     var runInBrowser = elements.runInBrowser.value;
