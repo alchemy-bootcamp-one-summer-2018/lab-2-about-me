@@ -144,26 +144,52 @@
         </div>
 
 
+       
+
         <div class="game-two"> 
+    
+           <h2>Game Two | Fill in the blanks</h2>
+                <p>Guess the right answer:</p>
+    
+                    <form id="guess-form" onsubmit="return checkGuessAnswers()">
+                        <p>The animal I get most excited to see at the zoo is an</p>
+                        <input name="otter" require>
+    
+                        <button type="submit">Take A Guess!</button>
+    
+                        <p id="guess-result"></p>
+                        
+                    </form>
+
+        <div class="game-three"> 
+
+            <h2>Checkbox | Gather Data</h2>
+            <p>Check One One Check Two One Two</p>
+
+        <form onsubmit="return countTags()">
         
-            <h2>Game Two | Fill in the blanks</h2>
-            <p>Guess the right answer:</p>
+            <ul>
+                            
+            <li><label><input type="checkbox" name="tags" value="p"> p </label></li>
+            <li><label><input type="checkbox" name="tags" value="div"> div</label></li>
+            <li><label><input type="checkbox" name="tags" value="form"> form</label></li>
+            <li> <label><input type="checkbox" name="tags" value="button"> button</label></li>
+            <li> <label><input type="checkbox" name="tags" value="ul">ul </label></li>
 
-                <form id="guess-form" onsubmit="return checkGuessAnswers()">
-                    <p>The animal I get most excited to see at the zoo is an</p>
-                    <input name="otter" require>
+            </ul>
 
-                    <button type="submit">Take A Guess!</button>
+            <button type="submit">Push la button</button>
 
-                    <p id="guess-result"></p>
-                    
-                </form>
-        </div>
+            <p id="results"></p>
+                            
+        </form>
+    </div>
 
     <script src="check-js-guess.js"> </script>
     <script src="check-js-answers.js"> </script>
+    <script src="check-checkboxes.js"> </script>
 
 </div>       
-            
+</div>           
 </body>
 </html>
