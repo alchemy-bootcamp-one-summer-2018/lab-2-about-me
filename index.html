@@ -151,11 +151,13 @@
            <h2>Game Two | Fill in the blanks</h2>
                 <p>Guess the right answer:</p>
     
-                    <form id="guess-form" onsubmit="return checkGuessAnswers()">
+                    <form id="guess-form" onsubmit="return checkGuessAnswer()">
                         <p>The animal I get most excited to see at the zoo is an</p>
                         <input name="otter" require>
     
                         <button type="submit">Take A Guess!</button>
+
+                        <p id="lives"> </p>
 
                         <p id="guess-result"></p>
                         
