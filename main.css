@@ -1,0 +1,164 @@
+body { 
+    box-sizing: border-box;
+    max-width: 100%;
+    margin: 0 auto;
+    position: relative;
+    background-color:#e5d8d1;
+}
+
+#container { 
+    width: 700px;
+    margin: 30px auto 30px 250px;
+    padding: 50px;
+    border-radius: 4px;	
+    background-color: #FFFFFF;	
+    box-shadow: 0 0 1px 0 rgba(239,242,247,0.5), 0 2px 4px 0 rgba(3,3,4,0.1);
+}
+
+/*About Bio*/
+
+#author-image {
+    margin-right: 20px;
+    float: left;
+}
+.author-bio { 
+    padding-bottom:20px;}
+
+/*Game One*/
+
+.question-title {
+    font-size: 20px;
+    color: #43565F;
+    letter-spacing: 1;
+    margin-bottom:0px;
+    font-weight: 400; }
+
+.game-one {
+    padding: 20px;	
+    margin-bottom: 40px;
+    border: 5px solid #f6f7f7;	
+    border-radius: 4px;	
+    background-color: #FFFFFF;
+}
+
+.question-wrapper {
+    padding: 8px;}
+
+
+#guess-form input { 
+    font-family: 'Roboto', sans-serif;
+    height: 30px;	
+    width: 300px;	
+    border: 1px solid #D3DCE6;	
+    border-radius: 4px;	
+    background-color: #FFFFFF;
+    padding:15px;
+    font-size: 20px;
+    font-weight: 300;
+    color:#778F9B;	
+}
+
+#js-result {
+    font-size: 30px;
+    text-align: center;
+    padding: 30px;
+    background: #E4E879;
+    color: #43565e;
+    font-weight: 500; 
+}
+
+/*Game Two*/
+
+.game-two {
+    padding: 20px;	
+    border: 5px solid #f6f7f7;	
+    border-radius: 4px;	
+    background-color: #FFFFFF;	
+}
+
+#guess-result {
+    font-size: 25px;
+    text-align: center;
+    padding: 30px;
+    background: #E4E879;
+    color: #43565e;
+    font-weight: 500;
+}
+
+/*fonts*/
+
+h1 {	
+    font-family: 'Roboto', sans-serif;
+    color: #43565F;	
+    font-size: 52px;	
+    font-weight: 300;	
+    text-align: left;
+    line-height: 85px;
+}
+
+h2 {  
+    font-family: 'Roboto', sans-serif;
+    color: #43565F;	
+    font-size: 30px;	
+    font-weight: 300;	
+    line-height: 35px;	
+    text-align: left;
+    }
+
+h3 {  
+    font-family: 'Roboto', sans-serif;
+    color: #43565F;	
+    font-size: 20px;	
+    font-weight: 400;	
+    line-height: 20px;	
+    text-align: left;
+    margin-bottom: -10px;}
+
+p {
+    font-family: 'Roboto', sans-serif;
+    color: #778F9B;		
+    font-size: 18px;
+    font-weight: 300;	
+    letter-spacing: 0.12px;	
+    line-height: 24px;
+}
+
+/*Game Three*/
+
+ul {list-style-type:none;
+}
+
+label { 
+    font-family: 'Roboto', sans-serif;
+    color: #778F9B;		
+    font-size: 18px;
+    font-weight: 300;	
+    letter-spacing: 0.12px;	
+    line-height: 24px;
+}
+
+/**buttons**/
+
+button {
+    height: 60px;	
+    width: 300px;	
+    background-color: #D41DB5;
+    color: #FFFFFF;	
+    font-family: "Open Sans";	
+    font-size: 16px;	
+    font-weight: 500;	
+    line-height: 22px;	
+    text-align: center;
+    border-radius: 100px;	
+    margin-top: 30px;}
+
+button:hover{
+    background-color: #e5643a;}
+
+#js-reset {
+    background-color:#DD4FC4;}
+
+#js-reset:hover {
+    background-color:#D5663A;}
+
+#guess-wrong {background:none;}

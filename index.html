@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A Quiz About Me</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <div id="container">
+
+        <div class="author-bio">
+
+            <img id="author-image" src="https://rosemarkcreative.com/wp-content/uploads/2018/05/me3.jpg" width="200px" alt="Kayla">
+        
+            <h3>Hey there! <b>*waves!*</b> </h3>
+            <p> I'm Kayla a mom, wife, cat squeezer, emoji lover,
+            exclamation point abuser, coffee consumer and Web Designer. In my life-time (34 years to be exact) 
+            I've moved all of the west of the country, I've been in banking, sales, customer service, 
+            design, and online marketing. I'm now venturing into learning code and further my career 
+            in the online tech field. Heres two sweet lil' quiz's about me!
+            </p>
+
+        </div>
+
+        <div class="game-one">
+
+            <h2> Game One  | Multiple Choice </h2>
+            <p>Let's play a game! find out more about me by choosing an 
+                answer and submitting your quiz at the bottom </p>
+
+            <form id="fact-form" 
+                onsubmit="return checkJSAnswers()"
+                onreset="resetJSAnswers()">  
+
+                <div class="question-wrapper">
+                    <p class="question-title">What type of school did I attend in grade school?</p>
+                        <p>
+                            <label>
+                                <input type="radio" name="school" 
+                                value="no" required> A gifted school 
+                            </label>
+
+                            <label>
+                                <input type="radio" name="school" 
+                                value="no" required> A clown school
+                            </label>
+
+                            <label>
+                                <input type="radio" name="school" 
+                                value="yes" required> A school for dyslexia
+                            </label>
+                        </p>
+                </div>   
+
+                <div class="question-wrapper"> 
+                    <p class="question-title">Which MTV "The Dairy Of" episode was I in?</p>
+                        <p>
+                            <label>
+                                <input type="radio" name="mtv" 
+                                value="yes" required> Destiny's Child
+                            </label>
+
+                            <label>
+                                <input type="radio" name="mtv" 
+                                value="no" required> Nelly
+                            </label>
+
+                            <label>
+                                <input type="radio" name="mtv" 
+                                value="no" required> Brittany Spears
+                            </label>
+                        </p>
+                 </div>
+
+                <div class="question-wrapper">
+                    <p class="question-title">Which state have I not lived in?</p>
+                        <p>
+                            <label>
+                                <input type="radio" name="state" 
+                                value="yes" required> Montana
+                            </label>
+
+                            <label>
+                                <input type="radio" name="state" 
+                                value="no" required> Oklahoma
+                            </label>
+
+                            <label>
+                            <input type="radio" name="state" 
+                                value="no" required> Texas
+                            </label>
+                        </p> 
+                </div> 
+
+                <div class="question-wrapper">
+                    <p class="question-title">Which of these careers did I not want to be growing up?</p>
+                        <p>
+                            <label>
+                                <input type="radio" name="career" 
+                                value="no" required>  A muppet maker
+                            </label>
+
+                            <label>
+                                <input type="radio" name="career" 
+                                value="no" required> A paleontologist
+                            </label>
+
+                            <label>
+                                <input type="radio" name="career" 
+                                value="yes" required> A makeup artist
+                            </label>  
+                        </p>  
+                </div>  
+
+                <div class="question-wrapper">
+                    <p class="question-title">When I was pregnant with both my boys my favorite smell was?</p>
+                        <p>
+                            <label>
+                                <input type="radio" name="smell" 
+                                value="no" required>  Roses
+                            </label>
+
+                            <label>
+                                <input type="radio" name="smell" 
+                                value="yes" required> K-mart
+                            </label>
+
+                            <label>
+                                <input type="radio" name="smell" 
+                                value="no" required> Someone else making me dinner
+                            </label>
+                        </p> 
+                    </div>
+
+                <button id="js-submit" type="submit">Click to see how you did!</button>
+                <button id="js-reset" type="reset" disabled>Want Try Again?</button>
+        
+        
+            </form>
+
+            <p id="js-result"></p>  
+    
+        </div>
+
+
+       
+
+        <div class="game-two"> 
+    
+           <h2>Game Two | Fill in the blanks</h2>
+                <p>Guess the right answer:</p>
+    
+                    <form id="guess-form" onsubmit="return checkGuessAnswer()">
+                        <p>The animal I get most excited to see at the zoo is an</p>
+                        <input name="otter" require>
+    
+                        <button type="submit">Take A Guess!</button>
+
+                        <p id="lives"> </p>
+
+                        <p id="guess-result"></p>
+                        
+                    </form>
+        </div>
+
+        <div class="game-three"> 
+
+            <h2>Checkbox | Gather Data</h2>
+            <p>Check One One Check Two One Two</p>
+
+        <form onsubmit="return countTags()">
+        
+            <ul>
+                            
+            <li><label><input type="checkbox" name="tags" value="p"> p </label></li>
+            <li><label><input type="checkbox" name="tags" value="div"> div</label></li>
+            <li><label><input type="checkbox" name="tags" value="form"> form</label></li>
+            <li> <label><input type="checkbox" name="tags" value="button"> button</label></li>
+            <li> <label><input type="checkbox" name="tags" value="ul">ul </label></li>
+
+            </ul>
+
+            <button type="submit">Push la button</button>
+
+            <p id="results"></p>
+                            
+        </form>
+        </div>
+
+    <script src="check-js-guess.js"> </script>
+    <script src="check-js-answers.js"> </script>
+    <script src="check-checkboxes.js"> </script>
+
+</div>       
+</div>           
+</body>
+</html>
