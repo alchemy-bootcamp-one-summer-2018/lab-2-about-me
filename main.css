@@ -1,0 +1,17 @@
+body {
+     color:yellow;
+     background-color:skyblue;
+     font-size:20px;
+     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+h1 {
+    color:midnightblue;
+}
+.changeStyle {
+    color:red;
+    font-size:25px;
+    box-sizing: border-box;
+}
+button {
+    padding:10px;
+}
