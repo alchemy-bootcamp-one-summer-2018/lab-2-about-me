@@ -4,11 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Lab 2 Project </title>
 <link rel = "stylesheet" href = "main.css">
 </head>
 <body>
     <h1>My Favorite Food Quiz</h1>
+
     <form id="facts-form"
         onsubmit="return checkJSAnswers()"
         onreset="resetJSAnswers()">
@@ -45,27 +46,21 @@
     </div>
     <br>
         <button id="js-submit" type="submit">Check Answers</button>
-    <br>
-    <br>
         <button id="js-reset" type="reset">Play again</button>
         <p id="js-results"></p>
     </form>
-    <form onsubmit = "return countTags()">
-        <label><input type="checkbox" name="tags" value="p"> p</label>
-        <label><input type="checkbox" name="tags" value="div"> div</label>
-        <label><input type="checkbox" name="tags" value="form">form</label>
-        <label><input type="checkbox" name="tags" value="button">button</label>
-        <label><input type="checkbox" name="tags" value="em">em</label>
-        <label><input type="checkbox" name="tags" value="ul">ul</label>
-        <label><input type="checkbox" name="tags" value="li">li</label>
-        <div>
-            <button>submit</button>
-        </div>
+   
+    <form id="guess-form" 
+        onsubmit="return checkGuessAnswer()">
+       <p>What is my age?</p>
+       <input name="number" required>
+       <button type="submit">Guess</button>
+       <p id="guess-results"></p>
     </form>
-    <p id="results"></p>
 
-    
+
     <script src="check-js-answers.js"></script>
     <script src="check-checkboxes.js"></script>
+    <script src="guess-js-answers.js"></script>
 </body>
 </html>
