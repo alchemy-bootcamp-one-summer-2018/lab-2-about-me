@@ -68,11 +68,11 @@
 
     <h1>Guessing Game</h1>
     
-    <form id="guess-form" onsubmit="return checkGuessAnswer()">
+    <form id="guess-form">
         <p>Guess a number between 1 and 10</p>
         <input name="number" require>
-        <button id="guess-button" type="submit">Guess</button>
-        <button id="guess-reset" type="reset" disabled>Play Again</button>
+        <button id="guess-button" onclick="return checkGuessAnswer()">Guess</button>
+        <button id="guess-reset" onclick="return resetGuessAnswers()" disabled>Play Again</button>
 
         <p id="guess-results"></p>
     </form>

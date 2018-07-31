@@ -1,4 +1,5 @@
-/* exported checkJSAnswers, resetJSAnswers */
+/* exported checkJSAnswers */
+/* exported resetJSAnswers */
 
 var bioForm = document.getElementById('bio-form');
 var bioResults = document.getElementById('js-results');
@@ -105,8 +106,8 @@ function checkJSAnswers() {
 function resetJSAnswers() {
     bioResults.innerText = '';
     bioSubmit.disabled = false;
-    bioReset.disabled = true;
-
+    bioReset.disabled = false;
+    
     while(moveInput.classList.length > 0) {
         moveInput.classList.remove(moveInput.classList.item(0));
     }
@@ -126,4 +127,6 @@ function resetJSAnswers() {
     while(candyButtons.classList.length > 0) {
         candyButtons.classList.remove(candyButtons.classList.item(0));
     }
+
+    return false;
 }
