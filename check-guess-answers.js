@@ -12,7 +12,6 @@ var totalGuesses = 5;
 function checkGuessAnswer() {
     var guess = guessForm.elements.number.value;
 
-    
     // eslint-disable-next-line
     if(guess == 7) {
         guessResults.classList.remove(guessResults.classList.item(0));
@@ -28,7 +27,6 @@ function checkGuessAnswer() {
         totalGuesses--;
         guessResults.innerText = `Wrong... you have ${totalGuesses} guesses left.`;
         guessResults.classList.add('wrongAnswer');
-        
         console.log(totalGuesses);
     }
 

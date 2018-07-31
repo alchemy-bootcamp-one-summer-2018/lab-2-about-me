@@ -107,7 +107,7 @@ function resetJSAnswers() {
     bioResults.innerText = '';
     bioSubmit.disabled = false;
     bioReset.disabled = false;
-    
+
     while(moveInput.classList.length > 0) {
         moveInput.classList.remove(moveInput.classList.item(0));
     }
