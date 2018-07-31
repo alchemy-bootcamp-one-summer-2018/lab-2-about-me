@@ -1,0 +1,11 @@
+.wrongAnswer { 
+    background-color: red;
+    color: white;
+    border: 15px solid red;
+}
+
+.correctAnswer { 
+    background-color: green;
+    color: white;
+    border: 15px solid green;
+}
